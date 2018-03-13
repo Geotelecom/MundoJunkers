@@ -8852,12 +8852,12 @@ header {
         line-height: 30px;
         font-size: 20px; } }
 
-  #royinfoblock h3 {
+  #royinfoblock h3, #royinfoblock .h3 {
     margin: 0;
     font: 400 20px/23px "Oswald", sans-serif;
 	text-transform:uppercase;
     color: #818ca1; }
-    #royinfoblock h4 {
+    #royinfoblock h4, #royinfoblock .h4 {
         margin: 0;
         font: 400 13px/14px Arial, sans-serif;
         color: #a4aec1; }
