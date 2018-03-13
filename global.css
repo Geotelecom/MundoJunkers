@@ -8852,7 +8852,7 @@ header {
         line-height: 30px;
         font-size: 20px; } }
 
-  #royinfoblock h3, #royinfoblock .h3  {
+  #royinfoblock h3, #royinfoblock .contacto3  {
     margin: 0;
     font: 400 20px/23px "Oswald", sans-serif;
 	text-transform:uppercase;
@@ -8915,7 +8915,7 @@ header {
             right:15px; }
         #royinfoblock > div:first-child:before {
             right:22px; }
-        #royinfoblock h3, #royinfoblock .h3  {
+        #royinfoblock h3, #royinfoblock .contacto3 {
             font: 400 18px/20px "Oswald", sans-serif; }
         #royinfoblock h4, #royinfoblock .h4 {
             font: 400 13px/14px Arial, sans-serif; }
@@ -8956,7 +8956,7 @@ header {
         #royinfoblock > div:before {
             display:none;
             right:15px; }
-        #royinfoblock h3, #royinfoblock .h3 {
+        #royinfoblock h3, #royinfoblock .contacto3 {
             font: 400 16px/18px "Oswald", sans-serif; }
         #royinfoblock h4, #royinfoblock .h4 {
             font: 400 12px/14px Arial, sans-serif; }
@@ -8986,7 +8986,7 @@ header {
         #royinfoblock > div:before {
             display:none;
             right:15px; }
-        #royinfoblock h3, #royinfoblock .h3 {
+        #royinfoblock h3, #royinfoblock .contacto3 {
             font: 400 14px/16px "Oswald", sans-serif; }
         #royinfoblock h4, #royinfoblock .h4 {
             font: 400 12px/14px Arial, sans-serif; }
