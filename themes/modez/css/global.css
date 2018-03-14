@@ -8958,8 +8958,8 @@ header {
             display:none;
             right:15px; }
         #royinfoblock div.numeros {
-            /*font: 400 16px/18px "Oswald", sans-serif;*/ }
-        #royinfoblock div.textonumeros, #royinfoblock div.numeros {
+            font: 400 14px/16px "Oswald", sans-serif !important; }
+        #royinfoblock div.textonumeros {
             font: 400 12px/14px Arial, sans-serif; }
         #royinfoblock div > div {
             margin-right:4px; }
