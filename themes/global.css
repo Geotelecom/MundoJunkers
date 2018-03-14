@@ -8868,7 +8868,7 @@ header {
   #royinfoblock h3 {
     margin: 0;
     font: 400 20px/23px "Oswald", sans-serif;
-	text-transform:uppercase;
+	   text-transform:uppercase;
     color: #818ca1; }
     #royinfoblock h4 {
         margin: 0;
@@ -8915,22 +8915,22 @@ header {
         width:34px; }
 
     @media (min-width:992px) and (max-width: 1199px) {
-      #royinfoblock h4.telefondalt { font-size: 11px; }
+      #royinfoblock div.telefondalt { font-size: 11px; }
         #royinfoblock > div {
             padding: 5px 6px; }
         #royinfoblock > div:first-child {
             padding: 4px 6px; }
-        #royinfoblock > div:last-child {
-            padding: 6px 0 0 6px; }
+        #royinfoblock > div:nth-of-type(2) {
+            padding: 6px 0 0 0; }
         #royinfoblock div > div.info-container {
             padding:14px 0; }
         #royinfoblock > div:before {
             right:15px; }
         #royinfoblock > div:first-child:before {
             right:22px; }
-        #royinfoblock h3 {
+        #royinfoblock div.time3, #royinfoblock div.tel3 {
             font: 400 18px/20px "Oswald", sans-serif; }
-        #royinfoblock h4 {
+        #royinfoblock div.time4, #royinfoblock div.tel4 {
             font: 400 13px/14px Arial, sans-serif; }
         #royinfoblock div > div {
             margin-right:12px; }
