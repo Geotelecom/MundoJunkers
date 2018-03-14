@@ -1,0 +1,31 @@
+.socialsharing_product button {
+    padding:4px 10px;
+    font: 500 13px/15px "Roboto", sans-serif !important;
+    width:25%;
+    margin-right: 3px;
+    color:#888888;
+    background:#ffffff;
+    border:none; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+    .socialsharing_product button {
+        padding:4px 10px;
+        font-size:13px;
+        width:100%;
+        float:left;
+        clear:both;
+        margin-top: 6px; } }
+    @media (max-width: 479px) {
+    .socialsharing_product button {
+        padding:4px 10px;
+        font-size:13px;
+        width:25%;
+        float:left;
+        margin: 6px 0 10px 0; } }
+
+#product_comparison .socialsharing_product button {
+    padding:4px 10px;
+    font-size:13px;
+    width:100%;
+    margin-right: 3px;
+    color:#888888;
+    background:#fafafa; }

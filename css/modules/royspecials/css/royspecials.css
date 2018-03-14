@@ -1,0 +1,58 @@
+/* Roy Specials */
+#roy_special_block .products-block li {
+    padding:0;
+	margin-bottom:0;
+	border:none;
+}
+#roy_special_block #specialsul {
+    padding:0;
+	margin-bottom:0;
+}
+#roy_special_block .products-block li .products-block-image {
+    border:none;
+    margin:0;
+    float:none;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+#roy_special_block .products-block li .product-content {
+    margin-top:12px;
+}
+#roy_special_block .products-block .product-description {
+    display:none;
+}
+#roy_special_block .products-block li .product-content h5 {
+    text-align: center;
+}
+#roy_special_block .price-box {
+    margin:10px 0 14px;
+    text-align: center;
+}
+#roy_special_block .price-box .special-price {
+    width:100%;
+    text-align: center;
+    font-size:20px;
+    line-height: 22px;
+    display: inline-block;
+    margin-bottom:10px;
+}
+#roy_special_block .price-box .old-price {
+    font-size:16px;
+    line-height: 20px;
+}
+#roy_special_block .price-box .price-percent-reduction {
+    font-size:16px;
+    line-height: 20px;
+}
+
+#roy_special_block .bx-controls a.bx-prev {
+    padding: 7px 1px 0 0; }
+#roy_special_block .bx-controls a.bx-next {
+    padding: 7px 0 0 2px; }
+#roy_special_block .bx-controls a.bx-prev:before {
+    content: "\f104"; }
+#roy_special_block .bx-controls a.bx-next:before {
+    content: "\f105"; }

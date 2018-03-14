@@ -1,0 +1,57 @@
+#my-account .addresses-lists {
+  margin-bottom: 30px; }
+#my-account ul.myaccount-link-list li {
+  overflow: hidden;
+  padding-bottom: 10px; }
+  #my-account ul.myaccount-link-list li a {
+    display: block;
+    overflow: hidden;
+    font: 400 18px/22px "Oswald", sans-serif;
+    color: #6D6D6D;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: all 350ms ease-in-out;
+    -moz-transition: all 350ms ease-in-out;
+    -o-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
+    position: relative; }
+    #my-account ul.myaccount-link-list li a i {
+      font-size: 25px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 60px;
+      height:60px;
+      color:#ffffff;
+      padding-top: 14px;
+      margin-right:12px;
+      display:inline-block;
+      background:#fa7c63;
+        border-bottom:3px solid #ce573f;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-transition: all 350ms ease-in-out;
+      -moz-transition: all 350ms ease-in-out;
+      -o-transition: all 350ms ease-in-out;
+      transition: all 350ms ease-in-out;
+      text-align: center; }
+    #my-account ul.myaccount-link-list li a span {
+      display: block;
+      padding: 20px 15px 20px 17px;
+      overflow: hidden;
+      -webkit-transition: all 250ms ease-in-out;
+      -moz-transition: all 250ms ease-in-out;
+      -o-transition: all 250ms ease-in-out;
+      transition: all 250ms ease-in-out;
+      margin-left: 56px; }
+    #my-account ul.myaccount-link-list li a:hover {
+      filter: none;
+      color:#333333; }
+    #my-account ul.myaccount-link-list li a:hover i {
+      background:#6d6d6d;
+        border-color:#515151; }
+    #my-account ul.myaccount-link-list li a:hover span {
+      margin-left: 52px; }

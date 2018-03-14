@@ -1,0 +1,98 @@
+/* ************************************************************************************************
+								Categories Page Styles
+************************************************************************************************ */
+.content_scene_cat {
+  color: #d7d7d7;
+  line-height: 19px;
+  margin: 0 0 14px 0; }
+  .content_scene_cat .content_scene_cat_bg {
+    margin-top:4px;
+      margin-bottom:14px;
+      max-width:100%;
+      max-height:100%;
+	  border:12px solid #ffffff;
+	  box-shadow:0 0 0 1px #e5e5e5;
+	  border-radius:5px;
+    padding: 0; }
+
+  .content_scene_cat span.category-name {
+    font: 600 20px/30px "Open Sans", sans-serif;
+    color: white;
+    margin-bottom: 12px; }
+    @media (max-width: 1199px) {
+      .content_scene_cat span.category-name {
+        font-size: 16px;
+        line-height: 26px; } }
+  .content_scene_cat p {
+    margin-bottom: 0; }
+  .content_scene_cat a {
+    color: #000; }
+  .content_scene_cat a.lnk_more {
+    color: #ff9b00;
+    margin-top: 5px;
+    display: block;
+    text-align: right;   
+  }
+    .content_scene_cat a:hover {
+      text-decoration: underline; }
+  .content_scene_cat .content_scene {
+    color: #777777; }
+    .content_scene_cat .content_scene .cat_desc {
+      padding-top: 20px; }
+      .content_scene_cat .content_scene .cat_desc a {
+        color: #777777; }
+        .content_scene_cat .content_scene .cat_desc a:hover {
+          color: #515151; }
+
+/* ************************************************************************************************
+									Sub Categories Styles
+************************************************************************************************ */
+#subcategories {
+    width:100%;
+  padding: 5px 0 0 0; }
+  #subcategories p.subcategory-heading {
+    font-weight: bold;
+    color: #333333;
+    margin: 0 0 15px 0; }
+  #subcategories ul {
+    margin: 0 0 0 -20px; }
+    #subcategories ul li {
+      float: left;
+      width: 128px;
+      margin: 0 0 13px 20px;
+      text-align: center;
+      height: 202px; }
+      #subcategories ul li .subcategory-image {
+        padding: 0 0 8px 0; }
+        #subcategories ul li .subcategory-image a {
+          display: block;
+          padding: 6px;
+          border: 1px solid #e5e5e5; }
+          #subcategories ul li .subcategory-image a img {
+            max-width: 100%;
+              height:auto;
+            vertical-align: top; }
+      #subcategories ul li h5 {
+        padding:0 8px;
+          min-height:46px;
+         }
+      #subcategories ul li .subcategory-name {
+        font-size: 16px;
+        line-height:22px;
+        color: #555555;
+        text-transform: uppercase; }
+        #subcategories ul li .subcategory-name:hover {
+          color: #222222; }
+      #subcategories ul li .cat_desc {
+        display: none; }
+      #subcategories ul li:hover .subcategory-image a {
+        border: 2px solid #6dad9d;
+        padding: 2px; }
+
+#category_description_full {
+    margin-bottom: 28px;
+}
+
+#subcategories {
+    display:none;
+}
