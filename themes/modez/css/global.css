@@ -8885,11 +8885,11 @@ header {
         transform: scale(0.94);
         }
     #royinfoblock div > div.info-tel {
-        background: url('../img/icons-tel.png') no-repeat top center transparent;
+        background: url('../img/icons-tel-1.png') no-repeat top center transparent;
         height:32px;
         width:36px; }
     #royinfoblock div > div.info-time {
-        background: url('../img/icons-time.png') no-repeat top center transparent;
+        background: url('../img/icons-time-1.png') no-repeat top center transparent;
         height:34px;
         width:34px; }
     #royinfoblock div > div.info-truck {
