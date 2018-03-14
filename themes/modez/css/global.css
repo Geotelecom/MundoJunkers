@@ -8859,7 +8859,7 @@ header {
     color: #818ca1; }
     #royinfoblock div.textonumeros {
         margin: 0;
-        font: 400 13px/14px Arial, sans-serif;
+        font: 400 12px/12px Arial, sans-serif;
         color: #a4aec1; }
 
     #royinfoblock div > div.info-tel,
@@ -8915,8 +8915,9 @@ header {
             right:15px; }
         #royinfoblock > div:first-child:before {
             right:22px; }
-        #royinfoblock div.numeros, #royinfoblock div.textonumeros,  {
-            font: 400 28px/20px "Oswald", sans-serif; }
+        #royinfoblock div.numeros  {
+          font-size:18px!important;
+            font: 400 18px/20px "Oswald", sans-serif; }
         #royinfoblock div.telefondalt {
             font: 400 11px/10px Arial, sans-serif; }
         #royinfoblock div > div {
@@ -8957,8 +8958,8 @@ header {
             display:none;
             right:15px; }
         #royinfoblock div.numeros {
-            font: 400 16px/18px "Oswald", sans-serif; }
-        #royinfoblock div.textonumeros {
+            /*font: 400 16px/18px "Oswald", sans-serif;*/ }
+        #royinfoblock div.textonumeros, #royinfoblock div.numeros {
             font: 400 12px/14px Arial, sans-serif; }
         #royinfoblock div > div {
             margin-right:4px; }
