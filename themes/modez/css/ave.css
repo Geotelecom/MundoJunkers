@@ -431,9 +431,9 @@ line-height: 1.5;
 }
 .qweb { float:right;float: right;position: relative;z-index: 999; }
 
-#royinfoblock div.numeros, #royinfoblock h4 { color: #D37A3D; }
+#royinfoblock div.numeros, #royinfoblock div.textonumeros { color: #D37A3D; }
 #royinfoblock div.numeros { font-size: 28px; }
-#royinfoblock h4 {
+#royinfoblock div.textonumeros {
 	top: 6px;
 	position: relative;	
 }
