@@ -8915,9 +8915,9 @@ header {
             right:15px; }
         #royinfoblock > div:first-child:before {
             right:22px; }
-        #royinfoblock div.numeros {
+        #royinfoblock div.numeros, #royinfoblock div.textonumeros,  {
             font: 400 18px/20px "Oswald", sans-serif; }
-        #royinfoblock div.textonumeros {
+        #royinfoblock div.telefondalt {
             font: 400 13px/14px Arial, sans-serif; }
         #royinfoblock div > div {
             margin-right:12px; }
