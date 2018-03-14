@@ -8816,13 +8816,13 @@ header {
   #royinfoblock > div:last-child {
     /*padding: 6px 0 0 18px;*/ }
 
-    #royinfoblock div.triangle {
+  #royinfoblock div.triangle {
     padding: 0px;
     float: right;
     width: 45px;
     background: url('../img/bgtriangle.png') no-repeat top center transparent;
     min-height: 70px;      
-    }
+  }
 
 #royinfoblock div > div.info-container {
     padding:14px 10px;
@@ -8852,10 +8852,10 @@ header {
         line-height: 30px;
         font-size: 20px; } }
 
-  #royinfoblock h3 {
+  #royinfoblock div.numeros {
     margin: 0;
     font: 400 20px/23px "Oswald", sans-serif;
-	text-transform:uppercase;
+	 text-transform:uppercase;
     color: #818ca1; }
     #royinfoblock h4 {
         margin: 0;
@@ -8915,7 +8915,7 @@ header {
             right:15px; }
         #royinfoblock > div:first-child:before {
             right:22px; }
-        #royinfoblock h3 {
+        #royinfoblock div.numeros {
             font: 400 18px/20px "Oswald", sans-serif; }
         #royinfoblock h4 {
             font: 400 13px/14px Arial, sans-serif; }
@@ -8956,7 +8956,7 @@ header {
         #royinfoblock > div:before {
             display:none;
             right:15px; }
-        #royinfoblock h3 {
+        #royinfoblock div.numeros {
             font: 400 16px/18px "Oswald", sans-serif; }
         #royinfoblock h4 {
             font: 400 12px/14px Arial, sans-serif; }
@@ -8986,7 +8986,7 @@ header {
         #royinfoblock > div:before {
             display:none;
             right:15px; }
-        #royinfoblock h3 {
+        #royinfoblock div.numeros {
             font: 400 14px/16px "Oswald", sans-serif; }
         #royinfoblock h4 {
             font: 400 12px/14px Arial, sans-serif; }

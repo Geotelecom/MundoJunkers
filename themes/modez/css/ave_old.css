@@ -431,8 +431,8 @@ line-height: 1.5;
 }
 .qweb { float:right;float: right;position: relative;z-index: 999; }
 
-#royinfoblock div.numeros, #royinfoblock h4 { color: #D37A3D; }
-#royinfoblock div.numeros { font-size: 28px; }
+#royinfoblock h3, #royinfoblock h4 { color: #D37A3D; }
+#royinfoblock h3 { font-size: 28px; }
 #royinfoblock h4 {
 	top: 6px;
 	position: relative;	
@@ -596,7 +596,7 @@ line-height: 1.5;
 	.head .row #logo_wrapper {
 	    margin-top: 125px;
 	}
-	#royinfoblock div.numeros {
+	#royinfoblock h3 {
     font-size: 18px !important;
 	}
 
