@@ -416,19 +416,20 @@ p.payment_module p.imgs { display: inline-block; }
 
 
 h2 {
-color: #338f9e;
-line-height: 2;
+	color: #338f9e;
+	line-height: 2;
 }
 
 h3 {
-color: #e4973b;
-line-height: 2;
+	color: #e4973b;
+	line-height: 2;
 }
 
 p {
-font-size: 14px;
-line-height: 1.5;
+	font-size: 14px;
+	line-height: 1.5;
 }
+
 .qweb { float:right;float: right;position: relative;z-index: 999; }
 
 #royinfoblock div.numeros, #royinfoblock div.textonumeros { color: #D37A3D; }
