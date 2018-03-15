@@ -56,47 +56,6 @@ q, blockquote {
     content: "";
     content: none; }
 
-/*Modifications*/
-#royinfoblock div.numeros {
-  margin: 0;
-  font: 400 20px/23px "Oswald", sans-serif;
-  text-transform:uppercase;
-  color: #818ca1; 
-}
-#royinfoblock div.textonumeros {
-  margin: 0;
-  font: 400 12px/12px Arial, sans-serif;
-  color: #a4aec1; 
-}
-
-p.carrito2{
-  overflow: auto;
-  font-size: 27px;
-  color: #338f9e;
-  line-height: 2;
-  margin-bottom: 9px;
-  margin-top: 18px;
-}
-
-.sds_title_block{
-  display:block;
-  margin-top: 20px;
-  margin-bottom: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 2;
-  font-size: 27px;
-}
-
-.sds_title_block a, .sds_title_block a:hover {
-    color: #ffffff!important;
-    font-family: 'Open Sans',Verdana,sans-serif!important;
-    font: 400 20px/20px "Oswald",sans-serif;
-    font-weight: bolder;
-    line-height: 20px;
-}
-
-
 a img {
   border: none; }
 
@@ -320,6 +279,34 @@ a {
     text-decoration: underline; }
   a:focus {
     outline: none; }
+
+/*MODIFICATIONS*/
+p.carrito2{
+  overflow: auto;
+  font-size: 27px;
+  color: #338f9e;
+  line-height: 2;
+  margin-bottom: 9px;
+  margin-top: 18px;
+}
+
+.sds_title_block{
+  display:block;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2;
+  font-size: 27px;
+}
+
+.sds_title_block a, .sds_title_block a:hover {
+    color: #ffffff!important;
+    font-family: 'Open Sans',Verdana,sans-serif!important;
+    font: 400 20px/20px "Oswald",sans-serif;
+    font-weight: bolder;
+    line-height: 20px;
+}
 
 img {
   vertical-align: middle; }
@@ -8857,13 +8844,13 @@ header {
   #royinfoblock > div:last-child {
     /*padding: 6px 0 0 18px;*/ }
 
-    #royinfoblock div.triangle {
+  #royinfoblock div.triangle {
     padding: 0px;
     float: right;
     width: 45px;
     background: url('../img/bgtriangle.png') no-repeat top center transparent;
     min-height: 70px;      
-    }
+  }
 
 #royinfoblock div > div.info-container {
     padding:14px 10px;
@@ -8893,16 +8880,16 @@ header {
         line-height: 30px;
         font-size: 20px; } }
 
-  #royinfoblock h3 {
+  #royinfoblock div.numeros {
     margin: 0;
     font: 400 20px/23px "Oswald", sans-serif;
 	  text-transform:uppercase;
     color: #818ca1; 
   }
-  #royinfoblock h4 {
-        margin: 0;
-        font: 400 13px/14px Arial, sans-serif;
-        color: #a4aec1; 
+  #royinfoblock div.textonumeros {
+    margin: 0;
+    font: 400 12px/12px Arial, sans-serif;
+    color: #a4aec1; 
   }
 
     #royinfoblock div > div.info-tel,
@@ -8928,11 +8915,11 @@ header {
         transform: scale(0.94);
         }
     #royinfoblock div > div.info-tel {
-        background: url('../img/icons-tel.png') no-repeat top center transparent;
+        background: url('../img/icons-tel-1.png') no-repeat top center transparent;
         height:32px;
         width:36px; }
     #royinfoblock div > div.info-time {
-        background: url('../img/icons-time.png') no-repeat top center transparent;
+        background: url('../img/icons-time-1.png') no-repeat top center transparent;
         height:34px;
         width:34px; }
     #royinfoblock div > div.info-truck {
@@ -8945,7 +8932,7 @@ header {
         width:34px; }
 
     @media (min-width:992px) and (max-width: 1199px) {
-        #royinfoblock h4.telefondalt { font-size: 11px; }
+      #royinfoblock div.telefondalt { font-size: 11px; }
         #royinfoblock > div {
             padding: 5px 6px; }
         #royinfoblock > div:first-child {
@@ -8958,19 +8945,11 @@ header {
             right:15px; }
         #royinfoblock > div:first-child:before {
             right:22px; }
-
         #royinfoblock div.numeros  {
-            font-size:18px!important;
-            font: 400 18px/20px "Oswald", sans-serif; 
-        }
-        #royinfoblock div.telefondalt {
-            font-size: 11px;
-            font: 400 11px/10px Arial, sans-serif; 
-        }
-        #royinfoblock h3 {
+          font-size:18px!important;
             font: 400 18px/20px "Oswald", sans-serif; }
-        #royinfoblock h4 {
-            font: 400 13px/14px Arial, sans-serif; }
+        #royinfoblock div.telefondalt {
+            font: 400 11px/10px Arial, sans-serif; }
         #royinfoblock div > div {
             margin-right:12px; }
     }
@@ -9009,14 +8988,8 @@ header {
             display:none;
             right:15px; }
         #royinfoblock div.numeros {
-            font: 400 14px/16px "Oswald", sans-serif !important; 
-        }
+            font: 400 14px/16px "Oswald", sans-serif !important; }
         #royinfoblock div.textonumeros {
-            font: 400 12px/14px Arial, sans-serif; 
-        }
-        #royinfoblock h3 {
-            font: 400 16px/18px "Oswald", sans-serif; }
-        #royinfoblock h4 {
             font: 400 12px/14px Arial, sans-serif; }
         #royinfoblock div > div {
             margin-right:4px; }
@@ -9045,14 +9018,8 @@ header {
             display:none;
             right:15px; }
         #royinfoblock div.numeros {
-            font: 400 14px/16px "Oswald", sans-serif; 
-        }
-        #royinfoblock div.textonumeros {
-            font: 400 12px/14px Arial, sans-serif; 
-        }
-        #royinfoblock h3 {
             font: 400 14px/16px "Oswald", sans-serif; }
-        #royinfoblock h4 {
+        #royinfoblock div.textonumeros {
             font: 400 12px/14px Arial, sans-serif; }
         #royinfoblock div > div {
             margin-right:4px; }
