@@ -1,0 +1,18 @@
+<?php /*%%SmartyHeaderCode:1076077425a98233581cda2-94012808%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'f41e1fc8bc9d7d4b9bae6e3a9cca56cf83109dd1' => 
+    array (
+      0 => '/var/www/vhosts/mundojunkers.es/httpdocs/themes/modez/modules/smartbloghomelatestnews/views/templates/front/smartblog_latest_news.tpl',
+      1 => 1493215470,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1076077425a98233581cda2-94012808',
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5aa1458735bf85_27870287',
+  'has_nocache_code' => false,
+  'cache_lifetime' => 31536000,
+),true); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5aa1458735bf85_27870287')) {function content_5aa1458735bf85_27870287($_smarty_tpl) {?><div class="block homenews"><h2 class='sds_title_block'><a href="https://mundojunkers.es/smartblog.html">Información de interés</a></h2><div class="sdsblog-box-content"><div class="sds_blog_post col-xs-12 col-sm-4 col-md-4"><div class="newsblock"> <span class="news_module_image_holder"> <a href="https://mundojunkers.es/smartblog/24_causas-zumbido-caldera.html"><img alt="Por qué mi caldera está haciendo un zumbido bastante ruidoso" title="Por qué mi caldera está haciendo un zumbido bastante ruidoso" class="feat_img_small" src="/modules/smartblog/images/24-home-default.jpg"></a> </span><h4 class="sds_post_title"><a href="https://mundojunkers.es/smartblog/24_causas-zumbido-caldera.html">Por qué mi caldera está haciendo un zumbido bastante ruidoso</a></h4><p> &iquest;Alguna vez tu caldera ha empezado a hacer un sonido de profundo estruendo, como una enorme y siniestra tetera? Ese sonido se llama, apropiadamente, Kettling....</p><p class="news_p_more"> <a href="https://mundojunkers.es/smartblog/24_causas-zumbido-caldera.html" class="news_more">Leer mas</a></p></div></div><div class="sds_blog_post col-xs-12 col-sm-4 col-md-4"><div class="newsblock"> <span class="news_module_image_holder"> <a href="https://mundojunkers.es/smartblog/23_problemas-comunes-calderas.html"><img alt="Ten cuidado con estos problemas en calderas para este invierno" title="Ten cuidado con estos problemas en calderas para este invierno" class="feat_img_small" src="/modules/smartblog/images/23-home-default.jpg"></a> </span><h4 class="sds_post_title"><a href="https://mundojunkers.es/smartblog/23_problemas-comunes-calderas.html">Ten cuidado con estos problemas en calderas para este invierno</a></h4><p> Qu&eacute; problemas pueden surgir con una caldera durante el invierno. Te damos todos los puntos a tener en cuenta y sus m&aacute;s que posibles soluciones....</p><p class="news_p_more"> <a href="https://mundojunkers.es/smartblog/23_problemas-comunes-calderas.html" class="news_more">Leer mas</a></p></div></div><div class="sds_blog_post col-xs-12 col-sm-4 col-md-4"><div class="newsblock"> <span class="news_module_image_holder"> <a href="https://mundojunkers.es/smartblog/22_beneficios-programacion-caldera.html"><img alt="Qué beneficios tiene la programación del mantenimiento regular de tu caldera" title="Qué beneficios tiene la programación del mantenimiento regular de tu caldera" class="feat_img_small" src="/modules/smartblog/images/22-home-default.jpg"></a> </span><h4 class="sds_post_title"><a href="https://mundojunkers.es/smartblog/22_beneficios-programacion-caldera.html">Qué beneficios tiene la programación del mantenimiento regular de tu caldera</a></h4><p> Beneficios del mantenimiento regular de tu caldera...</p><p class="news_p_more"> <a href="https://mundojunkers.es/smartblog/22_beneficios-programacion-caldera.html" class="news_more">Leer mas</a></p></div></div></div></div><?php }} ?>
