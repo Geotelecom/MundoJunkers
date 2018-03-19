@@ -1,0 +1,55 @@
+.shop-phone {
+  display:none;
+  float: left;
+  padding: 5px 0 10px; }
+  @media (max-width: 767px) {
+    .shop-phone {
+      display: none; } }
+  .shop-phone i {
+    font-size: 21px;
+    line-height: 21px;
+    color: white;
+    padding-right: 7px; }
+  .shop-phone strong {
+    color: white; }
+
+#contact-link {
+  display: none;
+  float: right;
+  margin:16px 0 0; }
+  @media (max-width: 479px) {
+    #contact-link {
+      width: 25%;
+      text-align: center; } }
+  #contact-link a {
+  	font-size: 14px;
+    display: block;
+    color: #8c8c8c;
+    font-weight: normal;
+    padding: 0px 10px;
+    cursor: pointer; }
+    @media (max-width: 479px) {
+      #contact-link a {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px; } }
+    #contact-link a:hover, #contact-link a.active {
+      color:#f45435; }
+
+@media (max-width: 767px) {
+  #contact_block {
+    margin-bottom: 20px; } }
+#contact_block .label {
+  display: none; }
+#contact_block .block_content {
+  color: #888888; }
+#contact_block p {
+  margin-bottom: 4px; }
+#contact_block p.tel {
+  font: 400 17px/21px Arial, Helvetica, sans-serif;
+  color: #333333;
+  margin-bottom: 6px; }
+  #contact_block p.tel i {
+    font-size: 25px;
+    vertical-align: -2px;
+    padding-right: 10px; }

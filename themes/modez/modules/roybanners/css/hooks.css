@@ -146,17 +146,6 @@
     padding: 10px 6px 0 6px;
     background: rgba(0, 0, 0, 0.5);
 }
-#htmlcontent_top .bview span.item-title,
-#htmlcontent_home .bview span.item-title {
-    text-transform: uppercase;
-    color: #ffffff;
-    text-align: center;
-    position: relative;
-    font: 400 18px/16px 'Oswald', sans-serif;
-    margin: 0;
-    padding: 10px 6px 0 6px;
-    background: rgba(0, 0, 0, 0.5);
-}
 #htmlcontent_top .bview p,
 #htmlcontent_home .bview p {
     font-size: 14px;
@@ -221,13 +210,6 @@
     transform: scale(10);
     transition: all 0.3s ease-in-out 0.1s;
 }
-#htmlcontent_top .bview-first span.item-title,
-#htmlcontent_home .bview-first span.item-title{
-    opacity:0;
-    background: transparent;
-    transform: scale(10);
-    transition: all 0.3s ease-in-out 0.1s;
-}
 #htmlcontent_top .bview-first p,
 #htmlcontent_home .bview-first p {
     opacity:0;
@@ -263,12 +245,6 @@
     transform: scale(1);
     transition-delay: 0.1s;
 }
-#htmlcontent_top .bview-first:hover span.item-title,
-#htmlcontent_home .bview-first:hover span.item-title {
-    opacity: 1;
-    transform: scale(1);
-    transition-delay: 0.1s;
-}
 #htmlcontent_top .bview-first:hover p,
 #htmlcontent_home .bview-first:hover p {
     opacity:1;
@@ -290,33 +266,17 @@
     #htmlcontent_top .bview-first h2,
     #htmlcontent_home .bview-first h2 {
         margin-bottom:20px;
-    } 
-    #htmlcontent_top .bview-first span.item-title,
-    #htmlcontent_home .bview-first span.item-title {
-        margin-bottom:20px;
-    } 
-}
+    } }
 
 @media (min-width:768px) and (max-width: 991px) {
     #htmlcontent_top .bview-first h2,
     #htmlcontent_home .bview-first h2 {
         margin: 8px 30px 10px 30px;
-    } 
-    #htmlcontent_top .bview-first span.item-title,
-    #htmlcontent_home .bview-first span.item-title {
-        margin: 8px 30px 10px 30px;
-    } 
-}
+    } }
 
 @media (min-width:480px) and (max-width: 767px) {
     #htmlcontent_top .bview-first h2,
     #htmlcontent_home .bview-first h2 {
-        margin: 16px 30px 10px 30px;
-        font-size:20px;
-        border:none;
-    }
-    #htmlcontent_top .bview-first span.item-title,
-    #htmlcontent_home .bview-first span.item-title {
         margin: 16px 30px 10px 30px;
         font-size:20px;
         border:none;
@@ -329,12 +289,6 @@
 @media (max-width: 479px) {
     #htmlcontent_top .bview-first h2,
     #htmlcontent_home .bview-first h2 {
-        margin: 6px 10px 10px 10px;
-        font-size:16px;
-        border:none;
-    }
-    #htmlcontent_top .bview-first span.item-title,
-    #htmlcontent_home .bview-first span.item-title {
         margin: 6px 10px 10px 10px;
         font-size:16px;
         border:none;

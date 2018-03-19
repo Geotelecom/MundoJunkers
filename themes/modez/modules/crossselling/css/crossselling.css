@@ -1,0 +1,26 @@
+#crossselling h2.productscategory_h2 {
+	margin:40px 0 20px 0;
+	padding:10px 0;
+	border-bottom:1px solid #ccc;
+	font-size:18px;
+	color:#333
+}
+#crossselling ul {list-style-type:none}
+#crossselling li {
+	float:left!important;
+    padding: 0!important;
+}
+#crossselling li a.lnk_img {display:block}
+#crossselling li a img { border:none!important; }
+#crossselling li p.product_name {
+    margin-bottom:5px;
+}
+#crossselling li p.product_name a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #3a3939;
+}
+#crossselling_list {
+	float: left;
+    width: 100%;
+}
