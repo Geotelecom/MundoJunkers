@@ -632,7 +632,7 @@ ul#ventajas { list-style:square;margin-left:25px; } ul#ventajas li { margin-bott
     padding: 30px 0 0;
 }
 #htmlcontent_top .bview span.item-title {
-    color: #ffffff;
+    color: #ffffff!important;
     padding: 30px 0 0;
 }
 
