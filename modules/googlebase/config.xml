@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <module>
+            <name>googlebase</name>
+            <displayName><![CDATA[Google Base Feed Products]]></displayName>
+            <version><![CDATA[0.6.4a]]></version>
+            <description><![CDATA[Generaci&oacute;n google base feed]]></description>
+            <author><![CDATA[]]></author>
+            <tab><![CDATA[Tools]]></tab>
+            <is_configurable>1</is_configurable>
+            <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+        </module>

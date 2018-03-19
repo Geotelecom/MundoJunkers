@@ -1,0 +1,18 @@
+[500] Internal Server Error
+
+
+{"url_call":"http://localhost:9000/www_mundojunkers.es/pedido-rapido?rand=1498036009545","is_ajax":1,"action":"loadCarrier","dataType":"html","id_country":"6","id_state":"","postcode":"","city":"","id_address_delivery":null,"async":1,"token":"639f62b37c572e42c59689fe99559ef8","navigator":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0"}
+----------------------------------------------------------------
+
+[500] Internal Server Error
+
+
+{"url_call":"http://localhost:9000/www_mundojunkers.es/pedido-rapido?rand=1498036011187","is_ajax":1,"dataType":"html","action":"loadReview","id_country":"6","id_state":"","async":1,"token":"639f62b37c572e42c59689fe99559ef8","navigator":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0"}
+----------------------------------------------------------------
+
+[500] Internal Server Error
+
+
+{"url_call":"http://localhost:9000/www_mundojunkers.es/pedido-rapido?rand=1498036054112","is_ajax":1,"dataType":"html","action":"loadPayment","id_country":"6","async":1,"token":"639f62b37c572e42c59689fe99559ef8","navigator":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0"}
+----------------------------------------------------------------
+

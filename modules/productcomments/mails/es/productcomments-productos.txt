@@ -1,0 +1,9 @@
+Hola {customer},
+Pedido con referencia {order_reference} de {shop_name}
+ 
+  	
+
+Su opinión es importante, valore nuestros productos
+Nos gustaría que valorase los productos adquiridos en el pedido {order_reference}. Haga click en el siguiente enlace para expresarnos su opinión:
+
+{link} 

@@ -1,0 +1,44 @@
+﻿
+[{shop_url}] 
+
+EEnhorabuena!
+Nuevo pedido en {shop_name} por el cliente: {firstname} {lastname} ({email})
+ 
+
+Detalles
+Pedido: {order_name} hecho el {date}
+
+Pago: {payment}
+
+Estado pedido: {order_status}
+Referencia 	
+Producto 	
+Precio unitario 	
+Cantidad 	
+Precio total
+{items}
+
+Productos 	{total_products}
+Descuentos 	{total_discounts}
+Embalaje regalo 	{total_wrapping}
+Envío 	{total_shipping}
+IVA 	{total_tax_paid}
+TOTAL pagado 	{total_paid}
+
+Transporte:
+{carrier}
+ 
+
+Dirección envío
+{delivery_block_html} 	  	
+
+Dirección facturación
+{invoice_block_html}
+ 
+
+Mensaje cliente:
+{message} 
+
+{shop_name} [{shop_url}] powered by
+PrestaShop(tm) [http://www.prestashop.com/] 
+

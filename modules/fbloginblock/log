@@ -1,0 +1,12 @@
+[12-Mar-2014 16:51:38] PHP Notice:  Undefined variable: link in /var/www/webs/Projectes/silicium/modules/fbloginblock/classes/login.class.php on line 80
+[12-Mar-2014 16:51:38] PHP Stack trace:
+[12-Mar-2014 16:51:38] PHP   1. {main}() /var/www/webs/Projectes/silicium/modules/fbloginblock/login.php:0
+[12-Mar-2014 16:51:38] PHP   2. login->mainAction() /var/www/webs/Projectes/silicium/modules/fbloginblock/login.php:42
+[12-Mar-2014 16:51:38] PHP   3. login->loginpro() /var/www/webs/Projectes/silicium/modules/fbloginblock/classes/login.class.php:44
+[12-Mar-2014 16:51:38] PHP   4. login->userLog() /var/www/webs/Projectes/silicium/modules/fbloginblock/classes/login.class.php:412
+[12-Mar-2014 16:51:38] PHP Fatal error:  Call to a member function getPageLink() on a non-object in /var/www/webs/Projectes/silicium/modules/fbloginblock/classes/login.class.php on line 80
+[12-Mar-2014 16:51:38] PHP Stack trace:
+[12-Mar-2014 16:51:38] PHP   1. {main}() /var/www/webs/Projectes/silicium/modules/fbloginblock/login.php:0
+[12-Mar-2014 16:51:38] PHP   2. login->mainAction() /var/www/webs/Projectes/silicium/modules/fbloginblock/login.php:42
+[12-Mar-2014 16:51:38] PHP   3. login->loginpro() /var/www/webs/Projectes/silicium/modules/fbloginblock/classes/login.class.php:44
+[12-Mar-2014 16:51:38] PHP   4. login->userLog() /var/www/webs/Projectes/silicium/modules/fbloginblock/classes/login.class.php:412

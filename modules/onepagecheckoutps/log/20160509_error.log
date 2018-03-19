@@ -1,0 +1,12 @@
+[504] Gateway Time-out
+
+
+{"url_call":"http://ahorraclima.es/pedido-rapido?rand=1462803968175","is_ajax":1,"dataType":"html","action":"loadPayment","async":1,"token":"72025f8ecacf42773743cc007f0ac66c","navigator":"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0"}
+----------------------------------------------------------------
+
+[504] Gateway Time-out
+
+
+{"url_call":"http://ahorraclima.es/pedido-rapido?rand=1462804363792","is_ajax":1,"action":"updateCarrier","recyclable":"","gift":"","gift_message":"","delivery_option[1268]":"27,","dataType":"json","async":1,"token":"72025f8ecacf42773743cc007f0ac66c","navigator":"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0"}
+----------------------------------------------------------------
+

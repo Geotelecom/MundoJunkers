@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>vikinguard</name>
+	<displayName><![CDATA[Vikinguard]]></displayName>
+	<version><![CDATA[3.1.2]]></version>
+	<description><![CDATA[It checks your site uptime and real user experience. This module provides all the infomation about your site&#039;s perfomance. ]]></description>
+	<author><![CDATA[Vikinguard team]]></author>
+	<tab><![CDATA[analytics_stats]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

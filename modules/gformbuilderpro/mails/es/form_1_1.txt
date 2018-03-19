@@ -1,0 +1,18 @@
+ 
+
+
+FORMULARIO ENVIADO POR UN INSTALADOR
+Nombre
+{nombre}
+Correo electrónico
+{email}
+Teléfono
+{telf}
+Província
+{provincia}
+Comentarios
+{comentarios}
+
+
+
+MundoJunkers 

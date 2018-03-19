@@ -1,0 +1,477 @@
+[500] Internal Server Error
+<style>
+				#psException{font-family: Verdana; font-size: 14px}
+				#psException h2{color: #F20000}
+				#psException p{padding-left: 20px}
+				#psException ul li{margin-bottom: 10px}
+				#psException a{font-size: 12px; color: #000000}
+				#psException .psTrace, #psException .psArgs{display: none}
+				#psException pre{border:1px solid #236B04; background-color:#EAFEE1; padding:5px; font-family:Courier;
+				width: 99%; overflow-x: auto; margin-bottom: 30px;}
+				#psException .psArgs pre{background-color: #F1FDFE;}
+				#psException pre .selected{color: #F20000; font-weight: bold;}
+			</style><div id="psException"><h2>[PrestaShopException]</h2><p><b>Property Address->lastname is empty</b><br /><i>at line </i><b>837</b><i> in file </i><b>classes/ObjectModel.php</b></p><div class="psTrace" id="psTrace_" style="display: block"><pre>831. 
+832. 			$message = $this-&gt;validateField($field, $this-&gt;$field);
+833. 			if ($message !== true)
+834. 			{
+835. 				if ($die)
+<span class="selected">836. 					throw new PrestaShopException($message);
+</span>837. 				return $error_return ? $message : false;
+838. 			}
+839. 		}
+840. 
+841. 		return true;
+</pre></div><ul><li><b>ObjectModelCore->validateFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_0').style.display =
+					(document.getElementById('psTrace_0').style.display != 'block') ? 'block' : 'none';
+					return false">[line 255 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_0" ><pre>249. 	 *
+250. 	 * @return array All object fields
+251. 	 */
+252. 	public function getFields()
+253. 	{
+<span class="selected">254. 		$this-&gt;validateFields();
+</span>255. 		$fields = $this-&gt;formatFields(self::FORMAT_COMMON);
+256. 
+257. 		// For retro compatibility
+258. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+259. 			$fields = array_merge($fields, $this-&gt;getFieldsShop());
+</pre></div></li><li><b>ObjectModelCore->getFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_1').style.display =
+					(document.getElementById('psTrace_1').style.display != 'block') ? 'block' : 'none';
+					return false">[line 596 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_1" ><pre>590. 			$id_shop_list = $this-&gt;id_shop_list;
+591. 
+592. 		if (Shop::checkIdShopDefault($this-&gt;def['table']) &amp;&amp; !$this-&gt;id_shop_default)
+593. 			$this-&gt;id_shop_default = min($id_shop_list);
+594. 		// Database update
+<span class="selected">595. 		if (!$result = ObjectModel::$db-&gt;update($this-&gt;def['table'], $this-&gt;getFields(), '`'.pSQL($this-&gt;def['primary']).'` = '.(int)$this-&gt;id, 0, $null_values))
+</span>596. 			return false;
+597. 
+598. 		// Database insertion for multishop fields related to the object
+599. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+600. 		{
+</pre></div></li><li><b>ObjectModelCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_2').style.display =
+					(document.getElementById('psTrace_2').style.display != 'block') ? 'block' : 'none';
+					return false">[line 186 - classes/Address.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_2').style.display =
+						(document.getElementById('psArgs_2').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_2" ><pre>180. 		if (isset(self::$_idCountries[$this-&gt;id]))
+181. 			unset(self::$_idCountries[$this-&gt;id]);
+182. 		if (isset(self::$_idZones[$this-&gt;id]))
+183. 			unset(self::$_idZones[$this-&gt;id]);
+184. 
+<span class="selected">185. 		return parent::update($null_values);
+</span>186. 	}
+187. 
+188. 	/**
+189. 	 * @see ObjectModel::delete()
+190. 	 */
+</pre></div><div class="psArgs" id="psArgs_2"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>AddressCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_3').style.display =
+					(document.getElementById('psTrace_3').style.display != 'block') ? 'block' : 'none';
+					return false">[line 417 - classes/ObjectModel.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_3').style.display =
+						(document.getElementById('psArgs_3').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_3" ><pre>411. 	 * @param bool $autodate
+412. 	 * @return boolean Insertion result
+413. 	 */
+414. 	public function save($null_values = false, $autodate = true)
+415. 	{
+<span class="selected">416. 		return (int)$this-&gt;id &gt; 0 ? $this-&gt;update($null_values) : $this-&gt;add($autodate, $null_values);
+</span>417. 	}
+418. 
+419. 	/**
+420. 	 * Add current object to database
+421. 	 *
+</pre></div><div class="psArgs" id="psArgs_3"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>ObjectModelCore->save</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_4').style.display =
+					(document.getElementById('psTrace_4').style.display != 'block') ? 'block' : 'none';
+					return false">[line 4616 - modules/onepagecheckoutps/onepagecheckoutps.php]</a><div class="psTrace" id="psTrace_4" ><pre>4610.                                 $delivery_address-&gt;id = null;
+4611.                                 $delivery_address-&gt;alias .= ' 2';
+4612.                             }
+4613.                         }*/
+4614. 
+<span class="selected">4615.                         if (!$delivery_address-&gt;save()) {
+</span>4616.                             $this-&gt;errors[] = $this-&gt;l('An error occurred while updating your delivery address.');
+4617.                         }
+4618. 
+4619.                         if (Validate::isLoadedObject($delivery_address)) {
+4620.                             //assign opc customer to cookie, customer and cart to calculare fine the prices of carriers
+</pre></div></li><li><b>OnePageCheckoutPS->loadCarrier</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_5').style.display =
+					(document.getElementById('psTrace_5').style.display != 'block') ? 'block' : 'none';
+					return false">[line 706 - override/controllers/front/OrderOpcController.php]</a><div class="psTrace" id="psTrace_5" ><pre>700.                         die('Invalid data type.');
+701.                 }
+702.             } elseif (method_exists($this-&gt;onepagecheckoutps, $action)) {
+703.                 switch ($data_type) {
+704.                     case 'html':
+<span class="selected">705.                         die($this-&gt;onepagecheckoutps-&gt;$action());
+</span>706.                     case 'json':
+707.                         $response = $this-&gt;onepagecheckoutps-&gt;jsonEncode($this-&gt;onepagecheckoutps-&gt;$action());
+708.                         die($response);
+709.                     default:
+710.                         die('Invalid data type.');
+</pre></div></li><li><b>OrderOpcController->postProcess</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_6').style.display =
+					(document.getElementById('psTrace_6').style.display != 'block') ? 'block' : 'none';
+					return false">[line 171 - classes/controller/Controller.php]</a><div class="psTrace" id="psTrace_6" ><pre>165. 			// setMedia MUST be called before postProcess
+166. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+167. 				$this-&gt;setMedia();
+168. 
+169. 			// postProcess handles ajaxProcess
+<span class="selected">170. 			$this-&gt;postProcess();
+</span>171. 
+172. 			if (!empty($this-&gt;redirect_after))
+173. 				$this-&gt;redirect();
+174. 
+175. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+</pre></div></li><li><b>ControllerCore->run</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_7').style.display =
+					(document.getElementById('psTrace_7').style.display != 'block') ? 'block' : 'none';
+					return false">[line 373 - classes/Dispatcher.php]</a><div class="psTrace" id="psTrace_7" ><pre>367. 			// Execute hook dispatcher
+368. 			if (isset($params_hook_action_dispatcher))
+369. 				Hook::exec('actionDispatcher', $params_hook_action_dispatcher);
+370. 
+371. 			// Running controller
+<span class="selected">372. 			$controller-&gt;run();
+</span>373. 		}
+374. 		catch (PrestaShopException $e)
+375. 		{
+376. 			$e-&gt;displayMessage();
+377. 		}
+</pre></div></li><li><b>DispatcherCore->dispatch</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_8').style.display =
+					(document.getElementById('psTrace_8').style.display != 'block') ? 'block' : 'none';
+					return false">[line 28 - index.php]</a><div class="psTrace" id="psTrace_8" ><pre>22. *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+23. *  International Registered Trademark &amp; Property of PrestaShop SA
+24. */
+25. 
+26. require(dirname(__FILE__).'/config/config.inc.php');
+<span class="selected">27. Dispatcher::getInstance()-&gt;dispatch();
+</span></pre></div></li></ul></div>
+
+{"url_call":"http://ahorraclima.es/pedido-rapido?rand=1483359557614","is_ajax":1,"action":"loadCarrier","dataType":"html","id_state":"313","postcode":"00000","city":"","id_address_delivery":"6302","async":1,"token":"1d5a199b169f86ac72861a862921f4ea","navigator":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"}
+----------------------------------------------------------------
+
+[500] Internal Server Error
+<style>
+				#psException{font-family: Verdana; font-size: 14px}
+				#psException h2{color: #F20000}
+				#psException p{padding-left: 20px}
+				#psException ul li{margin-bottom: 10px}
+				#psException a{font-size: 12px; color: #000000}
+				#psException .psTrace, #psException .psArgs{display: none}
+				#psException pre{border:1px solid #236B04; background-color:#EAFEE1; padding:5px; font-family:Courier;
+				width: 99%; overflow-x: auto; margin-bottom: 30px;}
+				#psException .psArgs pre{background-color: #F1FDFE;}
+				#psException pre .selected{color: #F20000; font-weight: bold;}
+			</style><div id="psException"><h2>[PrestaShopException]</h2><p><b>Property Address->lastname is empty</b><br /><i>at line </i><b>837</b><i> in file </i><b>classes/ObjectModel.php</b></p><div class="psTrace" id="psTrace_" style="display: block"><pre>831. 
+832. 			$message = $this-&gt;validateField($field, $this-&gt;$field);
+833. 			if ($message !== true)
+834. 			{
+835. 				if ($die)
+<span class="selected">836. 					throw new PrestaShopException($message);
+</span>837. 				return $error_return ? $message : false;
+838. 			}
+839. 		}
+840. 
+841. 		return true;
+</pre></div><ul><li><b>ObjectModelCore->validateFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_0').style.display =
+					(document.getElementById('psTrace_0').style.display != 'block') ? 'block' : 'none';
+					return false">[line 255 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_0" ><pre>249. 	 *
+250. 	 * @return array All object fields
+251. 	 */
+252. 	public function getFields()
+253. 	{
+<span class="selected">254. 		$this-&gt;validateFields();
+</span>255. 		$fields = $this-&gt;formatFields(self::FORMAT_COMMON);
+256. 
+257. 		// For retro compatibility
+258. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+259. 			$fields = array_merge($fields, $this-&gt;getFieldsShop());
+</pre></div></li><li><b>ObjectModelCore->getFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_1').style.display =
+					(document.getElementById('psTrace_1').style.display != 'block') ? 'block' : 'none';
+					return false">[line 596 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_1" ><pre>590. 			$id_shop_list = $this-&gt;id_shop_list;
+591. 
+592. 		if (Shop::checkIdShopDefault($this-&gt;def['table']) &amp;&amp; !$this-&gt;id_shop_default)
+593. 			$this-&gt;id_shop_default = min($id_shop_list);
+594. 		// Database update
+<span class="selected">595. 		if (!$result = ObjectModel::$db-&gt;update($this-&gt;def['table'], $this-&gt;getFields(), '`'.pSQL($this-&gt;def['primary']).'` = '.(int)$this-&gt;id, 0, $null_values))
+</span>596. 			return false;
+597. 
+598. 		// Database insertion for multishop fields related to the object
+599. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+600. 		{
+</pre></div></li><li><b>ObjectModelCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_2').style.display =
+					(document.getElementById('psTrace_2').style.display != 'block') ? 'block' : 'none';
+					return false">[line 186 - classes/Address.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_2').style.display =
+						(document.getElementById('psArgs_2').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_2" ><pre>180. 		if (isset(self::$_idCountries[$this-&gt;id]))
+181. 			unset(self::$_idCountries[$this-&gt;id]);
+182. 		if (isset(self::$_idZones[$this-&gt;id]))
+183. 			unset(self::$_idZones[$this-&gt;id]);
+184. 
+<span class="selected">185. 		return parent::update($null_values);
+</span>186. 	}
+187. 
+188. 	/**
+189. 	 * @see ObjectModel::delete()
+190. 	 */
+</pre></div><div class="psArgs" id="psArgs_2"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>AddressCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_3').style.display =
+					(document.getElementById('psTrace_3').style.display != 'block') ? 'block' : 'none';
+					return false">[line 417 - classes/ObjectModel.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_3').style.display =
+						(document.getElementById('psArgs_3').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_3" ><pre>411. 	 * @param bool $autodate
+412. 	 * @return boolean Insertion result
+413. 	 */
+414. 	public function save($null_values = false, $autodate = true)
+415. 	{
+<span class="selected">416. 		return (int)$this-&gt;id &gt; 0 ? $this-&gt;update($null_values) : $this-&gt;add($autodate, $null_values);
+</span>417. 	}
+418. 
+419. 	/**
+420. 	 * Add current object to database
+421. 	 *
+</pre></div><div class="psArgs" id="psArgs_3"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>ObjectModelCore->save</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_4').style.display =
+					(document.getElementById('psTrace_4').style.display != 'block') ? 'block' : 'none';
+					return false">[line 4616 - modules/onepagecheckoutps/onepagecheckoutps.php]</a><div class="psTrace" id="psTrace_4" ><pre>4610.                                 $delivery_address-&gt;id = null;
+4611.                                 $delivery_address-&gt;alias .= ' 2';
+4612.                             }
+4613.                         }*/
+4614. 
+<span class="selected">4615.                         if (!$delivery_address-&gt;save()) {
+</span>4616.                             $this-&gt;errors[] = $this-&gt;l('An error occurred while updating your delivery address.');
+4617.                         }
+4618. 
+4619.                         if (Validate::isLoadedObject($delivery_address)) {
+4620.                             //assign opc customer to cookie, customer and cart to calculare fine the prices of carriers
+</pre></div></li><li><b>OnePageCheckoutPS->loadCarrier</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_5').style.display =
+					(document.getElementById('psTrace_5').style.display != 'block') ? 'block' : 'none';
+					return false">[line 706 - override/controllers/front/OrderOpcController.php]</a><div class="psTrace" id="psTrace_5" ><pre>700.                         die('Invalid data type.');
+701.                 }
+702.             } elseif (method_exists($this-&gt;onepagecheckoutps, $action)) {
+703.                 switch ($data_type) {
+704.                     case 'html':
+<span class="selected">705.                         die($this-&gt;onepagecheckoutps-&gt;$action());
+</span>706.                     case 'json':
+707.                         $response = $this-&gt;onepagecheckoutps-&gt;jsonEncode($this-&gt;onepagecheckoutps-&gt;$action());
+708.                         die($response);
+709.                     default:
+710.                         die('Invalid data type.');
+</pre></div></li><li><b>OrderOpcController->postProcess</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_6').style.display =
+					(document.getElementById('psTrace_6').style.display != 'block') ? 'block' : 'none';
+					return false">[line 171 - classes/controller/Controller.php]</a><div class="psTrace" id="psTrace_6" ><pre>165. 			// setMedia MUST be called before postProcess
+166. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+167. 				$this-&gt;setMedia();
+168. 
+169. 			// postProcess handles ajaxProcess
+<span class="selected">170. 			$this-&gt;postProcess();
+</span>171. 
+172. 			if (!empty($this-&gt;redirect_after))
+173. 				$this-&gt;redirect();
+174. 
+175. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+</pre></div></li><li><b>ControllerCore->run</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_7').style.display =
+					(document.getElementById('psTrace_7').style.display != 'block') ? 'block' : 'none';
+					return false">[line 373 - classes/Dispatcher.php]</a><div class="psTrace" id="psTrace_7" ><pre>367. 			// Execute hook dispatcher
+368. 			if (isset($params_hook_action_dispatcher))
+369. 				Hook::exec('actionDispatcher', $params_hook_action_dispatcher);
+370. 
+371. 			// Running controller
+<span class="selected">372. 			$controller-&gt;run();
+</span>373. 		}
+374. 		catch (PrestaShopException $e)
+375. 		{
+376. 			$e-&gt;displayMessage();
+377. 		}
+</pre></div></li><li><b>DispatcherCore->dispatch</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_8').style.display =
+					(document.getElementById('psTrace_8').style.display != 'block') ? 'block' : 'none';
+					return false">[line 28 - index.php]</a><div class="psTrace" id="psTrace_8" ><pre>22. *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+23. *  International Registered Trademark &amp; Property of PrestaShop SA
+24. */
+25. 
+26. require(dirname(__FILE__).'/config/config.inc.php');
+<span class="selected">27. Dispatcher::getInstance()-&gt;dispatch();
+</span></pre></div></li></ul></div>
+
+{"url_call":"http://ahorraclima.es/pedido-rapido?rand=1483359577237","is_ajax":1,"action":"loadCarrier","dataType":"html","id_state":"346","postcode":"00000","city":"","id_address_delivery":"6302","async":1,"token":"1d5a199b169f86ac72861a862921f4ea","navigator":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"}
+----------------------------------------------------------------
+
+[500] Internal Server Error
+<style>
+				#psException{font-family: Verdana; font-size: 14px}
+				#psException h2{color: #F20000}
+				#psException p{padding-left: 20px}
+				#psException ul li{margin-bottom: 10px}
+				#psException a{font-size: 12px; color: #000000}
+				#psException .psTrace, #psException .psArgs{display: none}
+				#psException pre{border:1px solid #236B04; background-color:#EAFEE1; padding:5px; font-family:Courier;
+				width: 99%; overflow-x: auto; margin-bottom: 30px;}
+				#psException .psArgs pre{background-color: #F1FDFE;}
+				#psException pre .selected{color: #F20000; font-weight: bold;}
+			</style><div id="psException"><h2>[PrestaShopException]</h2><p><b>Property Address->lastname is empty</b><br /><i>at line </i><b>837</b><i> in file </i><b>classes/ObjectModel.php</b></p><div class="psTrace" id="psTrace_" style="display: block"><pre>831. 
+832. 			$message = $this-&gt;validateField($field, $this-&gt;$field);
+833. 			if ($message !== true)
+834. 			{
+835. 				if ($die)
+<span class="selected">836. 					throw new PrestaShopException($message);
+</span>837. 				return $error_return ? $message : false;
+838. 			}
+839. 		}
+840. 
+841. 		return true;
+</pre></div><ul><li><b>ObjectModelCore->validateFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_0').style.display =
+					(document.getElementById('psTrace_0').style.display != 'block') ? 'block' : 'none';
+					return false">[line 255 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_0" ><pre>249. 	 *
+250. 	 * @return array All object fields
+251. 	 */
+252. 	public function getFields()
+253. 	{
+<span class="selected">254. 		$this-&gt;validateFields();
+</span>255. 		$fields = $this-&gt;formatFields(self::FORMAT_COMMON);
+256. 
+257. 		// For retro compatibility
+258. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+259. 			$fields = array_merge($fields, $this-&gt;getFieldsShop());
+</pre></div></li><li><b>ObjectModelCore->getFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_1').style.display =
+					(document.getElementById('psTrace_1').style.display != 'block') ? 'block' : 'none';
+					return false">[line 596 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_1" ><pre>590. 			$id_shop_list = $this-&gt;id_shop_list;
+591. 
+592. 		if (Shop::checkIdShopDefault($this-&gt;def['table']) &amp;&amp; !$this-&gt;id_shop_default)
+593. 			$this-&gt;id_shop_default = min($id_shop_list);
+594. 		// Database update
+<span class="selected">595. 		if (!$result = ObjectModel::$db-&gt;update($this-&gt;def['table'], $this-&gt;getFields(), '`'.pSQL($this-&gt;def['primary']).'` = '.(int)$this-&gt;id, 0, $null_values))
+</span>596. 			return false;
+597. 
+598. 		// Database insertion for multishop fields related to the object
+599. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+600. 		{
+</pre></div></li><li><b>ObjectModelCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_2').style.display =
+					(document.getElementById('psTrace_2').style.display != 'block') ? 'block' : 'none';
+					return false">[line 186 - classes/Address.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_2').style.display =
+						(document.getElementById('psArgs_2').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_2" ><pre>180. 		if (isset(self::$_idCountries[$this-&gt;id]))
+181. 			unset(self::$_idCountries[$this-&gt;id]);
+182. 		if (isset(self::$_idZones[$this-&gt;id]))
+183. 			unset(self::$_idZones[$this-&gt;id]);
+184. 
+<span class="selected">185. 		return parent::update($null_values);
+</span>186. 	}
+187. 
+188. 	/**
+189. 	 * @see ObjectModel::delete()
+190. 	 */
+</pre></div><div class="psArgs" id="psArgs_2"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>AddressCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_3').style.display =
+					(document.getElementById('psTrace_3').style.display != 'block') ? 'block' : 'none';
+					return false">[line 417 - classes/ObjectModel.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_3').style.display =
+						(document.getElementById('psArgs_3').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_3" ><pre>411. 	 * @param bool $autodate
+412. 	 * @return boolean Insertion result
+413. 	 */
+414. 	public function save($null_values = false, $autodate = true)
+415. 	{
+<span class="selected">416. 		return (int)$this-&gt;id &gt; 0 ? $this-&gt;update($null_values) : $this-&gt;add($autodate, $null_values);
+</span>417. 	}
+418. 
+419. 	/**
+420. 	 * Add current object to database
+421. 	 *
+</pre></div><div class="psArgs" id="psArgs_3"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>ObjectModelCore->save</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_4').style.display =
+					(document.getElementById('psTrace_4').style.display != 'block') ? 'block' : 'none';
+					return false">[line 4616 - modules/onepagecheckoutps/onepagecheckoutps.php]</a><div class="psTrace" id="psTrace_4" ><pre>4610.                                 $delivery_address-&gt;id = null;
+4611.                                 $delivery_address-&gt;alias .= ' 2';
+4612.                             }
+4613.                         }*/
+4614. 
+<span class="selected">4615.                         if (!$delivery_address-&gt;save()) {
+</span>4616.                             $this-&gt;errors[] = $this-&gt;l('An error occurred while updating your delivery address.');
+4617.                         }
+4618. 
+4619.                         if (Validate::isLoadedObject($delivery_address)) {
+4620.                             //assign opc customer to cookie, customer and cart to calculare fine the prices of carriers
+</pre></div></li><li><b>OnePageCheckoutPS->loadCarrier</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_5').style.display =
+					(document.getElementById('psTrace_5').style.display != 'block') ? 'block' : 'none';
+					return false">[line 706 - override/controllers/front/OrderOpcController.php]</a><div class="psTrace" id="psTrace_5" ><pre>700.                         die('Invalid data type.');
+701.                 }
+702.             } elseif (method_exists($this-&gt;onepagecheckoutps, $action)) {
+703.                 switch ($data_type) {
+704.                     case 'html':
+<span class="selected">705.                         die($this-&gt;onepagecheckoutps-&gt;$action());
+</span>706.                     case 'json':
+707.                         $response = $this-&gt;onepagecheckoutps-&gt;jsonEncode($this-&gt;onepagecheckoutps-&gt;$action());
+708.                         die($response);
+709.                     default:
+710.                         die('Invalid data type.');
+</pre></div></li><li><b>OrderOpcController->postProcess</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_6').style.display =
+					(document.getElementById('psTrace_6').style.display != 'block') ? 'block' : 'none';
+					return false">[line 171 - classes/controller/Controller.php]</a><div class="psTrace" id="psTrace_6" ><pre>165. 			// setMedia MUST be called before postProcess
+166. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+167. 				$this-&gt;setMedia();
+168. 
+169. 			// postProcess handles ajaxProcess
+<span class="selected">170. 			$this-&gt;postProcess();
+</span>171. 
+172. 			if (!empty($this-&gt;redirect_after))
+173. 				$this-&gt;redirect();
+174. 
+175. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+</pre></div></li><li><b>ControllerCore->run</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_7').style.display =
+					(document.getElementById('psTrace_7').style.display != 'block') ? 'block' : 'none';
+					return false">[line 373 - classes/Dispatcher.php]</a><div class="psTrace" id="psTrace_7" ><pre>367. 			// Execute hook dispatcher
+368. 			if (isset($params_hook_action_dispatcher))
+369. 				Hook::exec('actionDispatcher', $params_hook_action_dispatcher);
+370. 
+371. 			// Running controller
+<span class="selected">372. 			$controller-&gt;run();
+</span>373. 		}
+374. 		catch (PrestaShopException $e)
+375. 		{
+376. 			$e-&gt;displayMessage();
+377. 		}
+</pre></div></li><li><b>DispatcherCore->dispatch</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_8').style.display =
+					(document.getElementById('psTrace_8').style.display != 'block') ? 'block' : 'none';
+					return false">[line 28 - index.php]</a><div class="psTrace" id="psTrace_8" ><pre>22. *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+23. *  International Registered Trademark &amp; Property of PrestaShop SA
+24. */
+25. 
+26. require(dirname(__FILE__).'/config/config.inc.php');
+<span class="selected">27. Dispatcher::getInstance()-&gt;dispatch();
+</span></pre></div></li></ul></div>
+
+{"url_call":"http://ahorraclima.es/pedido-rapido?rand=1483359612130","is_ajax":1,"action":"loadCarrier","dataType":"html","id_state":"313","postcode":"00000","city":"","id_address_delivery":"6302","async":1,"token":"1d5a199b169f86ac72861a862921f4ea","navigator":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"}
+----------------------------------------------------------------
+

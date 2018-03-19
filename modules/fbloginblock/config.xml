@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <module>
+            <name>fbloginblock</name>
+            <displayName><![CDATA[Facebook, Twitter, Google, LinkedIn, Microsoft Conexiones (5 en 1) ]]></displayName>
+            <version><![CDATA[1.3.7]]></version>
+            <description><![CDATA[Agregar Facebook, Twitter, Google, LinkedIn, Microsoft Conexiones (5 en 1)]]></description>
+            <author><![CDATA[storeprestamodules.com]]></author>
+            <tab><![CDATA[others]]></tab>
+	<confirmUninstall>¿Está seguro que desea eliminarlo ? Tenga cuidado , se perderán todos su configuración y sus datos</confirmUninstall>
+            <is_configurable>1</is_configurable>
+            <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+        </module>

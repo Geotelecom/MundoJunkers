@@ -1,0 +1,33 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{royblocksocial}modez>royblocksocial_39808e4a724cabeac530268217915e1f'] = 'Roy bloque Social';
+$_MODULE['<{royblocksocial}modez>royblocksocial_299b87a60e7484daa9cb1fc9b1f1ee57'] = 'Le permite añadir información sobre sus cuentas de redes sociales.';
+$_MODULE['<{royblocksocial}modez>royblocksocial_f4f70727dc34561dfde1a3c529b6205c'] = 'ajustes';
+$_MODULE['<{royblocksocial}modez>royblocksocial_76f8961bb8f4bb2b95c07650f30a7e7b'] = 'Facebook URL';
+$_MODULE['<{royblocksocial}modez>royblocksocial_c162369096f0fe5784f05052ceee6b47'] = 'Su página de fans en Facebook.';
+$_MODULE['<{royblocksocial}modez>royblocksocial_bcca29e10968edaf6e0154d2339ad556'] = 'Twitter URL';
+$_MODULE['<{royblocksocial}modez>royblocksocial_1912cacf8a06a4eaa878c7313593715a'] = 'Sus oficiales cuentas de Twitter.';
+$_MODULE['<{royblocksocial}modez>royblocksocial_1a530e4877d8d41f810d9d05f065722d'] = 'URL de RSS';
+$_MODULE['<{royblocksocial}modez>royblocksocial_672f301ddc5372b2477ed3c1d9322949'] = 'El feed RSS de su elección (su blog, su tienda, etc.).';
+$_MODULE['<{royblocksocial}modez>royblocksocial_ad7198d676478ac70c3243c1d3446331'] = 'URL de YouTube';
+$_MODULE['<{royblocksocial}modez>royblocksocial_5817a34292f074f9f596de6cb3607540'] = 'Su cuenta oficial de YouTube.';
+$_MODULE['<{royblocksocial}modez>royblocksocial_85eac9d4572e285262a3e76130dcb4ea'] = 'URL Google Plus:';
+$_MODULE['<{royblocksocial}modez>royblocksocial_be1d482ea5d68e157ad2ebe18612a4b1'] = 'Usted página oficial de Google Plus.';
+$_MODULE['<{royblocksocial}modez>royblocksocial_76abe3a162f22f63fae44d60fbe8f11b'] = 'Pinterest URL:';
+$_MODULE['<{royblocksocial}modez>royblocksocial_e158a81859319b5e442bc490b0e81af3'] = 'Su cuenta oficial de Pinterest.';
+$_MODULE['<{royblocksocial}modez>royblocksocial_130bab903955b2f6047a0db82f460386'] = 'Instagram URL:';
+$_MODULE['<{royblocksocial}modez>royblocksocial_d55a27c3408d38f3137182c89b69a7a7'] = 'Su cuenta oficial de Instagram.';
+$_MODULE['<{royblocksocial}modez>royblocksocial_75989269fa0374171bfc5d3ae58c54aa'] = 'VK URL:';
+$_MODULE['<{royblocksocial}modez>royblocksocial_9350b487dd7bad6509ddceb16939983a'] = 'Su cuenta oficial de VK.';
+$_MODULE['<{royblocksocial}modez>royblocksocial_c9cc8cce247e49bae79f15173ce97354'] = 'Salvar';
+$_MODULE['<{royblocksocial}modez>royblocksocial_d918f99442796e88b6fe5ad32c217f76'] = 'Síguenos';
+$_MODULE['<{royblocksocial}modez>royblocksocial_d85544fce402c7a2a96a48078edaf203'] = 'Facebook';
+$_MODULE['<{royblocksocial}modez>royblocksocial_2491bc9c7d8731e1ae33124093bc7026'] = 'Gorjeo';
+$_MODULE['<{royblocksocial}modez>royblocksocial_bf1981220040a8ac147698c85d55334f'] = 'RSS';
+$_MODULE['<{royblocksocial}modez>royblocksocial_970cfba66b8380fb97b742e4571356c6'] = 'Youtube';
+$_MODULE['<{royblocksocial}modez>royblocksocial_dda8dc38128a8c843ba9f496d6ee7186'] = 'google Plus';
+$_MODULE['<{royblocksocial}modez>royblocksocial_86709a608bd914b28221164e6680ebf7'] = 'Pinterest';
+$_MODULE['<{royblocksocial}modez>royblocksocial_55f015a0c5605702f913536afe70cfb0'] = 'Instagram';
+$_MODULE['<{royblocksocial}modez>royblocksocial_1a76721f2486f81107746670a065068b'] = 'VK.com';

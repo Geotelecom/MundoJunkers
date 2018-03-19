@@ -1,0 +1,37 @@
+.pts a{
+color:#ff7e00 !important
+}
+#div_onepagecheckoutps_info{display:none}
+
+.onepagecheckoutps_p_step{
+background-color:#f3f3f3;
+border-radius:5px;
+font-family:"Oswald",Verdana,sans-serif !important;
+padding-bottom:0 !important;
+}
+.pts h5, .pts .h5{
+font-size:17px !important;
+text-transform:uppercase !important;
+color:#767582 !important
+}
+
+.fa-pts-3x {
+  font-size:2.4em !important;
+}
+div#onepagecheckoutps .onepagecheckoutps_p_step{border:none !important}
+div#onepagecheckoutps .onepagecheckoutps_p_step i{
+margin-right:15px !important;
+margin-left:15px !important
+}
+
+div#onepagecheckoutps #onepagecheckoutps_step_one_container, div#onepagecheckoutps #onepagecheckoutps_step_review_container, div#onepagecheckoutps #onepagecheckoutps_step_three_container, div#onepagecheckoutps #onepagecheckoutps_step_review_container {
+  min-height: 200px;
+  position: relative;
+margin-bottom:20px !important;
+}
+
+#container_float_review{
+padding-bottom:40px !important}
+
+
+#header-order-detail-content h5{font-size:12px !important}

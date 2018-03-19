@@ -1,0 +1,93 @@
+﻿7.3.8.6
+
+*FIX* - No traducía bien un literal en \views\templates\front\order-summary.tpl por comillas
+
+*FIX* - Mejora en la corrección de "reescritura de direcciones" por parte de PayPal.
+
+*FIX* - En la factura, si es devolución, ahora muestra el símbolo de resta en el recargo.
+
+
+
+7.3.8.7
+
+*FIX* - Solventada incompatibilidad con Pasarela Integral (IPN).
+
+
+
+7.3.8.8
+*FIX* - PNM-2984 : Hungarian currency does not accept decimals.
+
+*FIX* - PNM-3004 : use paypal state instead of waiting for payment
+
+*FIX* - PNM-2827 : showing button when product is not available
+
+*FIX* - PayPal : when products are out of stock or catalog mode
+
+*FIX* - PNM-2810 : fix on 1.6 add a delay to show or hide express checkout shortcut
+
+*FIX* - fixed issues when using https
+
+*FIX* - fixed italy case
+
+*FIX* - fixed issue with paypal login that is used even when not configured.
+
+*FIX* - fixed when using credit slips do not refund product
+
+*FIX* - paypal confirmation page SHOULD obey SSL settings
+
+*FIX* - Al actualizar desde una versión anterior a la 7.3.8.0 pide constantemente la clave
+
+
+
+7.3.8.9
+
+*FIX* - Arreglada incompatibilidad con algún módulo de OnePageCheckOut
+
+*FIX* - Cambiado literal "Recargo adicional" por "Gastos de gestión"
+
+*FIX* - Añadidas varias traducciones
+
+
+
+7.3.9.0
+
+*MEJORA* - Mejorada visualización del método de pago (y responsive)
+
+*MEJORA* - Ahora se pueden mostrar los detalles del recargo a la hora de pagar elegir el método de pago (indicar el tipo de porcentaje aplicado, por ejemplo)
+
+7.3.9.1
+*MEJORA* - Mejoras en la programación
+*MEJORA* - Unido con la última versión de PayPal 3.9.0
+*MEJORA* - Posibilidad de captura parcial
+
+7.3.9.2
+*MEJORA* - Mejoras en la programación
+*MEJORA* - Merge con PayPal 3.10.0
+*MEJORA* - Muestra la dirección en la página de confirmación
+*MEJORA* - Añadida funcionalidad In-Context Checkout de PayPal. Nueva forma más sencilla del pago online.
+
+7.3.9.3
+*MEJORA* - Unido con PayPal oficial 3.10.1
+
+7.3.9.4
+*MEJORA* - Unido con PayPal oficial 3.10.2
+*MEJORA* - Permite elegir qué método de pago (cuenta PayPal/Tarjeta) estará seleccionado por defecto al ir a PayPal.
+
+7.3.9.5
+*FIX* - Traducido 'Administration fees'
+
+7.3.9.6
+*MEJORA* - Mejoras en programación
+*MEJORA* - Muestra advertencias si los datos de PayPal están vacíos o si el override no se ha instalado correctamente.
+
+7.3.9.7
+*MEJORA* - Implementada nueva factura en versiones iguales o superiores a Prestashop 1.6.1
+
+7.3.9.8
+*MEJORA* - Mejor explicación de mensaje de error de API y falta de override
+
+7.3.9.9
+*MEJORA* - Solventado bug (procedente de Paypal oficial) con el Paypal Login
+
+7.4.0.0
+*MEJORA* - Añadida comprobación de campos en la base de datos.

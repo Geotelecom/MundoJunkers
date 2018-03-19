@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>googlecategoryrating</name>
+	<displayName><![CDATA[Google Category Rating]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Add ratings to categories and get stars on Google search results]]></description>
+	<author><![CDATA[Avellana Digital SL]]></author>
+	<tab><![CDATA[others]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+	<is_configurable>0</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

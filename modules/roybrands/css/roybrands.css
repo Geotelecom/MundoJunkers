@@ -1,0 +1,185 @@
+#roybrands {
+    position:relative;
+}
+
+#roybrandscarousel {
+	margin:20px 15px 30px 15px;
+	clear:both;
+    padding:16px 0;
+    border:1px solid #e5e5e5;
+    background:#ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+#roybrandscarousel:hover {
+}
+
+.brandstitle {
+font: 400 18px/20px "Oswald", sans-serif;
+color: #333333;
+position: relative;
+background: none;
+border: none;
+text-transform: uppercase;
+    margin:0 15px;
+padding: 15px 0 0 0; }
+.brandstitle:before {
+    height: 2px;
+    width: 100%;
+    left: 0;
+    display: inline-block;
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    background: #ededed;
+    -webkit-transition: all 120ms ease-in;
+    -moz-transition: all 1200ms ease-in;
+    -o-transition: all 120ms ease-in;
+    -ms-transition: all 120ms ease-in;
+    transition: all 120ms ease-in; }
+
+.brandstitle span {
+display: inline-block;
+color: #333333;
+position: relative;
+padding-bottom: 17px;
+-webkit-transition: all 350ms ease-in-out;
+-moz-transition: all 350ms ease-in-out;
+-o-transition: all 350ms ease-in-out;
+transition: all 350ms ease-in-out; }
+    .brandstitle span:before {
+        height: 2px;
+        width: 100%;
+        left: 0;
+        display: inline-block;
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        background: #fa7c63;
+        -webkit-transition: all 120ms ease-in;
+        -moz-transition: all 1200ms ease-in;
+        -o-transition: all 120ms ease-in;
+        -ms-transition: all 120ms ease-in;
+        transition: all 120ms ease-in; }
+
+
+@media (min-width:992px) and (max-width: 1199px) {
+    #roybrandscarousel {
+        padding:24px 45px;
+    } }
+@media (min-width:768px) and (max-width: 991px) {
+    #roybrandscarousel {
+        padding:24px 55px;
+    } }
+@media (min-width:480px) and (max-width: 767px) {
+    #roybrandscarousel {
+        padding:24px 50px; }
+    #roybrandscarousel img {
+        -webkit-transform: scale(0.88);
+        -moz-transform: scale(0.88);
+        -ms-transform: scale(0.88);
+        -o-transform: scale(0.88);
+        transform: scale(0.88);
+    }
+    #roybrandsul li {
+        margin-right:70px!important;
+    }
+}
+@media (min-width: 420px) and (max-width:479px) {
+    #roybrandscarousel {
+        padding:24px 50px; }
+    #roybrandscarousel img {
+        -webkit-transform: scale(0.88);
+        -moz-transform: scale(0.88);
+        -ms-transform: scale(0.88);
+        -o-transform: scale(0.88);
+        transform: scale(0.88);
+    }
+    #roybrandsul li {
+        margin-right:70px!important;
+    }
+}
+@media (max-width: 419px) {
+    #roybrandscarousel {
+        padding:24px 20px; }
+    #roybrandscarousel img {
+        -webkit-transform: scale(0.74);
+        -moz-transform: scale(0.74);
+        -ms-transform: scale(0.74);
+        -o-transform: scale(0.74);
+        transform: scale(0.74);
+    }
+    #roybrandsul li {
+        margin-right:20px!important;
+    }
+}
+
+
+
+#roybrandscarousel img {
+   opacity: 0.7;
+   transition: all 0.4s ease 0s;
+}
+#roybrandscarousel img:hover {
+   opacity: 1;
+}
+
+#roybrandscarousel .bx-controls {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    width: 70px;
+}
+
+#roybrandscarousel .bx-controls a {
+    width:33px;
+    height:33px;
+    background:#ffffff;
+    border-color: #ededed;
+    border-style:solid;
+    border-width: 1px 1px 3px 1px;
+    outline:none;
+    text-align: center;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    display: inline-block;
+    cursor:pointer;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+#roybrandscarousel .bx-controls a:hover {
+    background:#6d6d6d;
+    border-color:#515151;  }
+
+#roybrandscarousel .bx-controls a.bx-prev{
+	float:left;
+    padding:6px 2px 0 0;
+    text-decoration: none;
+}
+#roybrandscarousel .bx-controls a.bx-next{
+	float:right;
+    padding:6px 0 0 2px;
+    text-decoration: none;
+}
+
+#roybrandscarousel .bx-controls a.bx-prev:before{
+    content:"\f104";
+    font-family: "FontAwesome";
+    font-size:22px;
+    color:#d6d6d6;
+    display: inline-block; }
+#roybrandscarousel .bx-controls a.bx-next:before{
+    content:"\f105";
+    font-family: "FontAwesome";
+    font-size:22px;
+    color:#d6d66d; }

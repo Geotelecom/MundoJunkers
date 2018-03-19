@@ -1,0 +1,122 @@
+vc updates 23rd FEB 2016
+
+modules\jscomposer\config\map.php -- vc_product_category, vc_products display_type parameter added.
+
+vc updates 20th FEB 2016
+
+modules\jscomposer\views\templates\admin\tinymce-jscomposer.tpl -- smartshort and advanced tinymce configurations added.
+
+modules\jscomposer\include\classes\shortcodes\shortcodes.php -- tinymce editor upgraded for text block element.
+
+vc updates 15th FEB 2016
+
+modules\jscomposer\include\templates\shortcodes\vc_pie.php
+
+vc updates 13th FEB 2016
+
+modules\jscomposer\assets\css\js_composer.css
+
+modules\jscomposer\include\templates\shortcodes\vc_row.php
+
+modules\jscomposer\include\templates\shortcodes\rev_slider_vc.php
+
+modules\jscomposer\jscomposer.php
+
+vc updates 10th FEB 2016
+
+modules\jscomposer\views\dialog.php
+
+vc updates 30th JAN 2016
+
+modules\jscomposer\jscomposer.php
+
+New js library added: modules\jscomposer\assets\lib\bower\skrollr\dist\skrollr.min.js
+
+modules\jscomposer\assets\js\js_composer_front.js
+
+modules\jscomposer\include\templates\shortcodes\vc_row.php
+
+modules\jscomposer\include\classes\shortcodes\shortcodes.php
+
+modules\jscomposer\include\params\load.php
+
+modules\jscomposer\include\helpers\helpers_api.php
+
+New file added: modules\jscomposer\include\params\el_id\el_id.php
+
+vc updates 24th JAN 2016
+
+1. Custom css set to null after saving cms pages without enabling the visual composer mode and fixed by commenting the following line in modules\jscomposer\jscomposer.php file
+self::$sds_action_hooks['wpb_save_css_values'] =  array($this,'updateCSSValues'); //line 81 of modules\jscomposer\jscomposer.php file
+
+vc updates 20th-DEC-2015
+
+1. google map not working on front fixed in modules\jscomposer\include\helpers\helpers_factory.php. First two lines were disabled in vc_value_from_safe method
+
+vc updates 13th-DEC-2015
+
+1. Undefined index cat_specify_temp and cms_specify_temp issue solved in:
+
+modules\jscomposer\controllers\admin\AdminvccontentanywhereController.php
+
+2. Video full screen issue solved
+
+modules\jscomposer\include\templates\shortcodes\vc_video.php
+
+vc updated files 2nd-Nov-2015:
+
+google font load issue in https mode. solved in:
+
+modules\jscomposer\include\templates\shortcodes\vc_custom_heading.php
+
+vc updated files 27th-oct-2015:
+
+Image path was remained http in https site. Fixed in
+
+modules\jscomposer\jscomposer.php
+
+On click param not worked, fixed in:
+
+modules\jscomposer\include\templates\shortcodes\vc_images_carousel.php
+
+
+vc updated files/folders on 21st-oct-2015:
+
+modules\jscomposer\assets\js\backend\composer-custom-views.js -- accordion tab child element edit issue.
+
+modules\jscomposer\include\templates\shortcodes\rev_slider_vc.php -- revslider not work if jscomposer module 
+installed later. solved 
+
+
+vc updated files/folders on 17-oct-2015:
+
+modules\jscomposer\jscomposer.php
+
+modules\jscomposer\assets\css\js_composer_backend_editor.css
+
+modules\jscomposer\assets\css\ui-custom-theme\jquery-ui-less.custom.css
+
+modules\jscomposer\config\templates.php
+
+modules\jscomposer\include\classes\shortcodes\shortcodes.php
+
+modules\jscomposer\include\classes\shortcodes\vc-column.php
+
+modules\jscomposer\include\classes\shortcodes\vc-row.php
+
+modules\jscomposer\include\params\column_offset\column_offset.php
+
+modules\jscomposer\include\params\css_editor\css_editor.php
+
+modules\jscomposer\include\params\font_container\font_container.php
+
+modules\jscomposer\include\params\vc_link\vc_link.php
+
+modules\jscomposer\include\templates\editors\partials\backend_controls.tpl.php
+
+modules\jscomposer\include\templates\params\column_offset\template.tpl.php
+
+all files inside modules\jscomposer\override\controllers\admin\templates folder
+
+
+

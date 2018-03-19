@@ -1,0 +1,210 @@
+.tp-caption.modez_h2 {
+color:#ffffff;
+font-weight:400;
+font-variant:normal;
+font-size:2.4em;
+line-height:1.1em;
+font-family:Oswald, sans-serif;
+text-shadow:rgba(51, 51, 51, 0.298039) 0px 0px 0.5em;
+margin:0px 0px 0.5em;
+padding:16px 30px 14px 30px;
+text-decoration-line:none;
+background-color:rgb(109, 173, 157);
+background-color:rgba(109, 173, 157, 0.8);
+text-decoration:none;
+border-width:0px;
+border-color:rgb(255, 255, 255);
+border-style:none;
+}
+
+.tp-caption.modez_button2 {
+color:#ffffff;
+font-weight:400;
+font-variant:normal;
+font-size:1.4em;
+line-height:1em;
+font-family:Oswald, sans-serif;
+text-shadow:none;
+padding:10px 26px 10px 26px;
+text-transform:uppercase;
+box-shadow:rgba(0, 0, 0, 0.8) 0px 0px 46px;
+text-decoration-line:none;
+background:#a1d7ca;
+text-decoration:none;
+border-radius:6px 6px 6px 6px;
+border-width:0px 0px 3px 0px;
+border-color:rgb(255, 255, 255) rgb(255, 255, 255) rgb(109, 173, 157) rgb(255, 255, 255);
+border-style:none none solid none;
+}
+
+.tp-caption.modez_button2:hover {
+color:#ffffff;
+font-weight:400;
+font-variant:normal;
+font-size:1.4em;
+line-height:1em;
+font-family:Oswald, sans-serif;
+text-shadow:none;
+padding:10px 26px 10px 26px;
+text-transform:uppercase;
+box-shadow:rgba(0, 0, 0, 0.8) 0px 0px 46px;
+text-decoration-line:none;
+background:#fa7c63;
+text-decoration:none;
+border-radius:6px 6px 6px 6px;
+border-width:0px 0px 3px 0px;
+border-color:rgb(206, 87, 63);
+border-style:none none solid none;
+}
+
+.tp-caption.modez_h2_yellow {
+color:#ffffff;
+font-weight:400;
+font-variant:normal;
+font-size:2.4em;
+line-height:1em;
+font-family:Oswald, sans-serif;
+text-shadow:rgba(51, 51, 51, 0.298039) 0px 0px 0.5em;
+margin:0px 0px 0.5em;
+padding:16px 30px 14px 30px;
+text-decoration-line:none;
+background-color:rgb(255, 243, 48);
+background-color:rgba(255, 243, 48, 0.498039);
+text-decoration:none;
+border-width:0px;
+border-color:rgb(255, 255, 255);
+border-style:none;
+}
+
+.tp-caption.modez_button2_lowshadow {
+color:#ffffff;
+font-size:1.4em;
+line-height:1em;
+font-weight:400;
+font-family:Oswald, sans-serif;
+padding:10px 26px 10px 26px;
+font-variant:normal;
+text-shadow:none;
+text-transform:uppercase;
+box-shadow:rgba(0, 0, 0, 0.35) 0px 0px 46px;
+text-decoration-line:none;
+background:rgb(161, 215, 202);
+text-decoration:none;
+border-radius:6px 6px 6px 6px;
+border-width:0px 0px 3px 0px;
+border-color:rgb(255, 255, 255) rgb(255, 255, 255) rgb(109, 173, 157) rgb(255, 255, 255);
+border-style:none none solid none;
+}
+
+.tp-caption.modez_button2_lowshadow:hover {
+color:#ffffff;
+font-weight:400;
+font-variant:normal;
+font-size:1.4em;
+line-height:1em;
+font-family:Oswald, sans-serif;
+text-shadow:none;
+padding:10px 26px 10px 26px;
+text-transform:uppercase;
+box-shadow:rgba(0, 0, 0, 0.8) 0px 0px 46px;
+text-decoration-line:none;
+background:#fa7c63;
+text-decoration:none;
+border-radius:6px 6px 6px 6px;
+border-width:0px 0px 3px 0px;
+border-color:rgb(206, 87, 63);
+border-style:none none solid none;
+}
+
+.tp-caption.modez_h3_purple {
+color:#ffffff;
+font-weight:400;
+font-variant:normal;
+font-size:2em;
+line-height:1em;
+font-family:Oswald, sans-serif;
+text-shadow:rgba(51, 51, 51, 0.298039) 0px 0px 0.5em;
+margin:0px 0px 0.5em;
+padding:16px 30px 14px 30px;
+text-decoration-line:none;
+background-color:rgb(167, 31, 124);
+background-color:rgba(167, 31, 124, 0.498039);
+text-decoration:none;
+border-width:0px;
+border-color:rgb(255, 255, 255);
+border-style:none;
+}
+
+.tp-caption.modez_h2_white {
+color:#ffffff;
+font-weight:400;
+font-variant:normal;
+font-size:2.4em;
+line-height:1em;
+font-family:Oswald, sans-serif;
+text-shadow:rgba(51, 51, 51, 0.298039) 0px 0px 0.5em;
+margin:0px 0px 0.5em;
+padding:16px 30px 14px 30px;
+text-decoration-line:none;
+background-color:rgb(255, 255, 255);
+background-color:rgba(255, 255, 255, 0.5);
+text-decoration:none;
+border-width:0px;
+border-color:rgb(255, 255, 255);
+border-style:none;
+}
+
+.tp-caption.modez_p {
+color:#ffffff;
+font-size:1.3em;
+line-height:1.1em;
+font-family:Roboto;
+padding:0px 0px 0px 0px;
+text-shadow:rgb(51, 51, 51) 0px 0px 0.8em;
+margin-bottom:0px;
+text-decoration-line:none;
+background-color:transparent;
+text-decoration:none;
+border-width:0px;
+border-color:rgb(255, 255, 255);
+border-style:none;
+}
+
+.tp-caption.modez_mark1 {
+color:#ffffff;
+font-weight:400;
+font-variant:normal;
+font-size:1.4em;
+line-height:1em;
+font-family:Oswald, sans-serif;
+text-shadow:none;
+padding:10px 26px 10px 26px;
+text-transform:uppercase;
+text-decoration-line:none;
+background:rgb(250, 124, 99);
+text-decoration:none;
+border-radius:6px 6px 6px 6px;
+border-width:0px 0px 3px 0px;
+border-color:rgb(206, 87, 63);
+border-style:none none solid none;
+}
+
+.tp-caption.modez_mark2 {
+color:#ffffff;
+font-weight:400;
+font-variant:normal;
+font-size:1.4em;
+line-height:1em;
+font-family:Oswald, sans-serif;
+text-shadow:none;
+padding:10px 26px 10px 26px;
+text-transform:uppercase;
+text-decoration-line:none;
+background:#a1d7ca;
+text-decoration:none;
+border-radius:6px 6px 6px 6px;
+border-width:0px 0px 3px 0px;
+border-color:rgb(109, 173, 157);
+border-style:none none solid none;
+}
+

@@ -1,0 +1,24 @@
+[504] Gateway Time-out
+
+
+{"url_call":"http://ahorraclima.es/pedido-rapido?rand=1468754748298","is_ajax":1,"dataType":"html","action":"loadPayment","async":1,"token":"72025f8ecacf42773743cc007f0ac66c","navigator":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.78.2 (KHTML, like Gecko) Version/6.1.6 Safari/537.78.2"}
+----------------------------------------------------------------
+
+[504] Gateway Time-out
+
+
+{"url_call":"http://ahorraclima.es/pedido-rapido?rand=1468754862063","is_ajax":1,"dataType":"html","action":"loadReview","id_country":"","id_state":"313","async":1,"token":"72025f8ecacf42773743cc007f0ac66c","navigator":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.78.2 (KHTML, like Gecko) Version/6.1.6 Safari/537.78.2"}
+----------------------------------------------------------------
+
+[504] Gateway Time-out
+
+
+{"url_call":"http://ahorraclima.es/pedido-rapido?rand=1468755091538","is_ajax":1,"dataType":"html","action":"loadReview","id_country":"","id_state":"313","async":1,"token":"72025f8ecacf42773743cc007f0ac66c","navigator":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.78.2 (KHTML, like Gecko) Version/6.1.6 Safari/537.78.2"}
+----------------------------------------------------------------
+
+[504] Gateway Time-out
+
+
+{"url_call":"http://ahorraclima.es/pedido-rapido?rand=1468755175548","is_ajax":1,"action":"writeLog","dataType":"html","id_state":"313","postcode":"","city":"","id_address_delivery":null,"async":1,"token":"72025f8ecacf42773743cc007f0ac66c","navigator":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36","code_error":504,"name_error":"Gateway Time-out","error":"","data_sent":"{"url_call":"http://ahorraclima.es/pedido-rapido?rand=1468755175548","is_ajax":1,"action":"loadCarrier","dataType":"html","id_state":"313","postcode":"","city":"","id_address_delivery":null,"async":1,"token":"72025f8ecacf42773743cc007f0ac66c","navigator":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"}"}
+----------------------------------------------------------------
+

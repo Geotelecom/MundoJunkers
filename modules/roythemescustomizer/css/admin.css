@@ -1,0 +1,836 @@
+.adminmodules {
+    font: 400 12px/1.42857 "Open Sans", Helvetica, Arial, sans-serif!important;
+}
+.roytc_title {
+    background:#4a4f54;
+    vertical-align: middle;
+    display:inline-block;
+    border-bottom:2px solid #292e34;
+    -webkit-border-radius: 14px 14px 0 0;
+    -moz-border-radius: 14px 14px 0 0;
+    -ms-border-radius: 14px 14px 0 0;
+    -o-border-radius: 14px 14px 0 0;
+    border-radius: 14px 14px 0 0;
+    margin:0;
+    width:100%;
+    padding:0; }
+    .roytc_title span.theme_name {
+        color:#ffffff;
+        text-transform: uppercase;
+        width:272px;
+        /*border-top:2px solid #40464b;*/
+        /*border-left:2px solid #40464b;*/
+        border-right:2px solid #292e34;
+        /*border-bottom:2px solid #292e34;*/
+        height:80px;
+        float:left;
+        background: url(../images/modez1.png) no-repeat center center #1abc9c;
+        text-align: center;
+        display:inline-block;
+        -webkit-border-radius: 14px 0 0 0;
+        -moz-border-radius: 14px 0 0 0;
+        -ms-border-radius: 14px 0 0 0;
+        -o-border-radius: 14px 0 0 0;
+        border-radius: 14px 0 0 0;
+        font-family: "Open Sans", sans-serif; }
+    .roytc_title span.mod_name {
+        color:#6e7478;
+        background:#4a4f54;
+        line-height: 80px;
+        font-family: "Open Sans", sans-serif;
+        padding:0 30px 0 30px;
+        height:80px;
+        float:left;
+        display:inline-block;
+        text-transform: uppercase;
+        font-size:30px; }
+
+.rtc_menu1 {
+    background: url(../images/menu_icons/rtc_menu1s.png) no-repeat 10px 10px transparent; }
+.rtc_menu2 {
+    background: url(../images/menu_icons/rtc_menu2s.png) no-repeat 10px 10px transparent; }
+.rtc_menu3 {
+    background: url(../images/menu_icons/rtc_menu3s.png) no-repeat 10px 10px transparent; }
+.rtc_menu4 {
+    background: url(../images/menu_icons/rtc_menu4s.png) no-repeat 10px 10px transparent; }
+.rtc_menu5 {
+    background: url(../images/menu_icons/rtc_menu5s.png) no-repeat 10px 10px transparent; }
+.rtc_menu6 {
+    background: url(../images/menu_icons/rtc_menu6s.png) no-repeat 10px 10px transparent; }
+.rtc_menu7 {
+    background: url(../images/menu_icons/rtc_menu7s.png) no-repeat 10px 10px transparent; }
+.rtc_menu8 {
+    background: url(../images/menu_icons/rtc_menu8s.png) no-repeat 10px 10px transparent; }
+.rtc_menu9 {
+    background: url(../images/menu_icons/rtc_menu9s.png) no-repeat 10px 10px transparent; }
+.rtc_menu10 {
+    background: url(../images/menu_icons/rtc_menu10s.png) no-repeat 10px 10px transparent; }
+.rtc_menu11 {
+    background: url(../images/menu_icons/rtc_menu11s.png) no-repeat 10px 10px transparent; }
+.rtc_menu12 {
+    background: url(../images/menu_icons/rtc_menu12s.png) no-repeat 10px 10px transparent; }
+.rtc_menu13 {
+    background: url(../images/menu_icons/rtc_menu13s.png) no-repeat 10px 10px transparent; }
+.rtc_menu14 {
+    background: url(../images/menu_icons/rtc_menu14s.png) no-repeat 10px 10px transparent; }
+.rtc_menu15 {
+    background: url(../images/menu_icons/rtc_menu15s.png) no-repeat 10px 10px transparent; }
+.rtc_menu16 {
+    background: url(../images/menu_icons/rtc_menu16s.png) no-repeat 10px 10px transparent; }
+
+.roytc_form a.configure_button {
+    font-size:14px;
+    padding:6px 12px;
+    margin:1px 6px 0 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight:bold;
+    background:#76c8bd;
+    border:none;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    text-shadow:none;
+    color:#ffffff; }
+.roytc_form a.configure_button:hover {
+    background:#f45435; }
+    .roytc_form a.configure_button i {
+        margin-left:6px; }
+
+.roytc_form .pl_img{
+    padding:0 5px;
+    vertical-align: top;
+    margin-top:-6px; }
+.confirm {
+    background:#8bc954;
+    margin-bottom:10px;
+    color:#ffffff;
+    padding:10px; }
+
+.roytc_form {
+    background:#f7f8fc;
+    -webkit-border-radius: 0 0 14px 14px;
+    -moz-border-radius: 0 0 14px 14px;
+    -ms-border-radius: 0 0 14px 14px;
+    -o-border-radius: 0 0 14px 14px;
+    border-radius: 0 0 14px 14px; }
+    .roytc_form .roytc_filedset {
+        border:none;
+        background:none;
+        padding:0; }
+        .roytc_form .roytc_filedset .roytc_navigation {
+            background-color:#292e34;
+            display:table-cell;
+            width:270px;
+            vertical-align: top;
+            padding:0 2px 0 2px;
+            text-align:left; }
+            .roytc_form .roytc_filedset .roytc_navigation ul {
+                margin:0;
+                padding:0;
+                list-style: none; }
+            .roytc_form .roytc_filedset .roytc_navigation ul li {
+                height:80px;
+                background-color:#4a4f54;
+                position:relative;
+                -webkit-transition: all 200ms ease-in-out;
+                -moz-transition: all 200ms ease-in-out;
+                -o-transition: all 200ms ease-in-out;
+                transition: all 200ms ease-in-out;
+                margin-bottom:2px;
+                /*border-bottom: 2px solid #f2f2f2;*/
+                padding:0; }
+            .roytc_form .roytc_filedset .roytc_navigation ul li:hover {
+                border-right:6px solid #fe8a71;
+                background-color:#575a5e;
+                padding:0; }
+                .roytc_form .roytc_filedset .roytc_navigation ul > li > a {
+                    font-size:16px;
+                    line-height:18px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color:#c2c8cd;
+                    text-decoration:none;
+                    display:block;
+                    padding:20px 10px 20px 80px; }
+            .roytc_form .roytc_filedset .roytc_navigation ul li.active {
+                border-right:6px solid #45b7af;
+                background-color:#292e34; }
+                .roytc_form .roytc_filedset .roytc_navigation ul > li.active > a {
+                    color:#ffffff; }
+
+.roytc_content>div.tab-pane {
+    display:none; }
+.roytc_content>div.active {
+    display:block; }
+
+        .roytc_form .roytc_filedset .roytc_save {
+            background:#40464b;
+            padding:20px 30px;
+            margin:0;
+            -webkit-border-radius: 0 0 14px 14px;
+            -moz-border-radius: 0 0 14px 14px;
+            -ms-border-radius: 0 0 14px 14px;
+            -o-border-radius: 0 0 14px 14px;
+            border-radius: 0 0 14px 14px;
+            text-align: left; }
+            .roytc_form .roytc_filedset .roytc_save input.save_button {
+                background:#8bc954;
+                text-transform: uppercase;
+                font-size:18px;
+                font-family: "Open Sans", sans-serif;
+                float:right;
+                color:#ffffff;
+                border-top:none;
+                border-left:none;
+                border-right:none;
+                border-bottom:3px solid #558a25;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+                border-radius: 8px;
+                padding:18px 38px; }
+            .roytc_form .roytc_filedset .roytc_save input.reset_button {
+                background:#fa6868;
+                color:#ffffff;
+                font-family: "Open Sans", sans-serif;
+                text-transform: uppercase;
+                font-size:18px;
+                border-top:none;
+                border-left:none;
+                border-right:none;
+                border-bottom:3px solid #c84234;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+                border-radius: 8px;
+                padding:18px 38px; }
+            .roytc_form .roytc_filedset .roytc_save p.helpcontent {
+                font-size:14px;
+                display:inline-block;
+                margin:0 0 0 30px;
+                padding: 20px 20px 20px 52px;
+                background: url(../images/helpicon.png) no-repeat 11px 13px;
+                color:#888888; }
+        .roytc_form .roytc_filedset .roytc_content {
+            display:table-cell;
+            border-right:1px solid #d3d4d9;
+            border-bottom:1px solid #d3d4d9;
+            text-align:left; }
+            .roytc_form .roytc_filedset .roytc_content .roytc_row {
+                margin:20px 0px; }
+                .roytc_form .roytc_filedset .roytc_content div.margin-form {
+                    padding-left:370px;
+                    font-size:16px;
+                    margin:20px 0px; }
+                .roytc_form .roytc_filedset .roytc_content .displayed_flag {
+                    display:inline-block;
+                    float:left;
+                    cursor:pointer;
+                    margin-top:-6px;
+                    padding: 0 6px 9px 6px;
+                    background:#ffffff;
+                    border:2px solid #e5e5e5; }
+                .roytc_form .roytc_filedset .roytc_content .displayed_flag img {
+                    padding: 0; }
+                .roytc_form .roytc_filedset .roytc_content .language_flags {
+                    display:inline-block;
+                    float:left;
+                    margin-left:6px;
+                    margin-top:-6px;
+                    font-size: 13px;
+                    line-height:17px;
+                    color:#cccccc;
+                    padding: 7px 6px 7px 6px;
+                    background:#fafafa;
+                    border:2px solid #e5e5e5; }
+                .roytc_form .roytc_filedset .roytc_content .language_flags br {
+                    display:none; }
+                .roytc_form .roytc_filedset .roytc_content .language_flags img {
+                    padding:0;
+                    cursor:pointer;
+                    margin:0 6px 0 10px; }
+                .roytc_form .roytc_filedset .roytc_content label {
+                    padding-top: 2px;
+                    font-size:14px;
+                    width:360px;
+                    color:#40464b; }
+                .roytc_form .roytc_filedset .roytc_content label.gradicon {
+                    display: inline-block;
+                    width: 440px;
+                    height: 50px;
+                    padding:10px 20px 0 0;
+                    cursor:pointer;
+                    color:#ffffff;
+                    font-weight:normal;
+                    font-size:16px;
+                    text-transform: uppercase;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                    border-radius: 8px;
+                    border: 3px solid #ffffff;
+                    -moz-box-shadow: 0 0 3px #b5b5b5;
+                    -webkit-box-shadow: 0 0 3px #b5b5b5;
+                    box-shadow: 0 0 3px #b5b5b5;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color='#b5b5b5')";
+                    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color='#b5b5b5');
+                    text-shadow:0px 0px 5px #ffffff;
+                    margin: 0px 10px 10px 0;}
+                .roytc_form .roytc_filedset .roytc_content label.paticon {
+                    display: inline-block;
+                    width: 202px;
+                    height: 50px;
+                    padding:10px 20px 0 0;
+                    cursor:pointer;
+                    color:#ffffff;
+                    font-weight:normal;
+                    font-size:14px;
+                    text-transform: uppercase;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                    border-radius: 8px;
+                    -moz-box-shadow: 0 0 3px #b5b5b5;
+                    -webkit-box-shadow: 0 0 3px #b5b5b5;
+                    box-shadow: 0 0 3px #b5b5b5;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color='#b5b5b5')";
+                    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color='#b5b5b5');
+                    border: 3px solid #ffffff;
+                    text-shadow:0px 0px 5px #ffffff;
+                    margin: 0px 10px 10px 0;}
+                .roytc_form .roytc_filedset .roytc_content label.gradicon input[type="radio"]{
+                    margin-left:6px; }
+                .roytc_form .roytc_filedset .roytc_content label.slider_mode,
+                .roytc_form .roytc_filedset .roytc_content label.menu_mode,
+                .roytc_form .roytc_filedset .roytc_content label.up_mode {
+                    margin-right:200px;}
+                .roytc_form .roytc_filedset .roytc_content label.slider_mode span,
+                .roytc_form .roytc_filedset .roytc_content label.menu_mode span {
+                    display:inline-block;
+                    text-align:center;
+                    width:200px;
+                }
+                .roytc_form .roytc_filedset .roytc_content label.up_mode span {
+                    display:none;
+                }
+                .roytc_form .roytc_filedset .roytc_content label.slider_mode:before,
+                .roytc_form .roytc_filedset .roytc_content label.up_mode:before,
+                .roytc_form .roytc_filedset .roytc_content label.menu_mode:before {
+                    display: inline-block;
+                    width: 180px;
+                    cursor:pointer;
+                    color:#888888;
+                    font-weight:bold;
+                    content:' ';
+                    font-size:14px;
+                    text-align: center;
+                    border: none;
+                    padding-top:92px;
+                    margin: -40px 10px 10px 0; }
+                .roytc_form .roytc_filedset .roytc_content label.menu_mode:before {
+                    padding-top:60px;
+                    margin: -24px 10px 10px 0; }
+                .roytc_form .roytc_filedset .roytc_content label.up_mode:before {
+                    padding-top:65px;
+                    margin: -24px 10px 0 0; }
+
+                .roytc_content .smode1:before{
+                    background: url(../images/rtc_smode1.png) no-repeat top center;	}
+                .roytc_content .smode2:before{
+                    background: url(../images/rtc_smode2.png) no-repeat top center;	}
+                .roytc_content .mmode1:before{
+                    background: url(../images/mmode1.png) no-repeat top center;	}
+                .roytc_content .mmode2:before{
+                    background: url(../images/mmode2.png) no-repeat top center;	}
+                .roytc_content .upmode1:before{
+                    background: url(../images/upmode1.png) no-repeat top center; }
+                .roytc_content .upmode2:before{
+                    background: url(../images/upmode2.png) no-repeat top center; }
+.roytc_form .roytc_filedset .roytc_content label.rmode {
+    margin-right:200px;}
+.roytc_form .roytc_filedset .roytc_content label.rmode span{
+    display:inline-block;
+    text-align:center;
+    width:170px;
+    text-indent: 0;
+    margin-left:30px;
+}
+.roytc_form .roytc_filedset .roytc_content label.rmode:before {
+    display: inline-block;
+    width: 180px;
+    cursor:pointer;
+    color:#888888;
+    font-weight:bold;
+    content:' ';
+    font-size:14px;
+    text-align: center;
+    border: none;
+    padding-top:160px;
+    margin: -50px 10px 0 0; }
+
+.roytc_content .rm0:before{
+    background: url(../images/rmode0.png) no-repeat top center;	}
+.roytc_content .rm1:before{
+    background: url(../images/rmode1.png) no-repeat top center;	}
+.roytc_content .rm2:before{
+    background: url(../images/rmode2.png) no-repeat top center;	}
+
+                .roytc_form .roytc_filedset .roytc_content label.logo_align {
+                    width:auto;
+                    padding:0 12px; }
+                .roytc_form .roytc_filedset .roytc_content p.helpcontent {
+                    font-size:14px;
+                    margin:20px 30px 5px 0;
+                    border:1px solid #e5e5e5;
+                    padding: 18px 20px 18px 52px;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                    border-radius: 8px;
+                    background: url(../images/helpicon.png) no-repeat 11px 13px #fdfdfd;
+                    color:#888888; }
+                .roytc_form .roytc_filedset .roytc_content p.link {
+                    font-size:13px;
+                    color:#888888; }
+                .roytc_form .roytc_filedset .roytc_content p.fontshow {
+                    font-size:14px;
+                    background-color: #fcfcfc;
+                    padding: 20px;
+                    margin-right:30px;
+                    border:1px solid #e5e5e5;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                    border-radius: 8px;
+                    color:#888888; }
+                .roytc_form .roytc_filedset .roytc_content select,
+                .roytc_form .roytc_filedset .roytc_content input[type="text"],
+                .roytc_form .roytc_filedset .roytc_content input[type="file"] {
+                    font-size:14px;
+                    padding:6px;
+                    margin-top:-6px;
+                    margin-right:6px;
+                    border:2px solid #888888;
+                    color:#888888; }
+                .roytc_form .roytc_filedset .roytc_content select {
+                    cursor:pointer; }
+                .roytc_form .roytc_filedset .roytc_content input.button {
+                    font-size:14px;
+                    padding:10px 14px;
+                    margin-top:1px;
+                    text-transform: uppercase;
+                    font-weight:bold;
+                    font-family: "Open Sans", sans-serif;
+                    background:#76c8bd;
+                    -webkit-transition: all 200ms ease-in-out;
+                    -moz-transition: all 200ms ease-in-out;
+                    -o-transition: all 200ms ease-in-out;
+                    transition: all 200ms ease-in-out;
+                    border:none;
+                    text-shadow:none;
+                    color:#ffffff; }
+                .roytc_form .roytc_filedset .roytc_content input.button:hover {
+                    background:#f45435; }
+        .roytc_form .roytc_filedset h2 {
+            color:#ffffff;
+            font-family: "Open Sans", sans-serif;
+            height:59px;
+            margin: 0 0 30px 0;
+            border-bottom:1px solid #007f64;
+            text-transform: uppercase;
+            font-size:26px;
+            background: url(../images/menu_icons/menu_lines.png) no-repeat 0 0 #1abc9c;
+            padding:22px 0 0 78px; }
+        .roytc_form .roytc_filedset h3 {
+            background-color:#ffffff;
+            border:1px solid #d9d9d9;
+            color:#45b7af;
+            font-family: "Open Sans", sans-serif;
+            margin:20px 30px 40px 30px;
+            text-transform: uppercase;
+            font-size:18px;
+            box-shadow:0 0 8px rgba(0,0,0,0.05);
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+            padding:14px 24px; }
+
+
+
+
+
+
+.roytc_content .flameicon{
+    background: url(../images/flameicon.png) repeat top left #f2f2f2;	}
+.roytc_content .watericon{
+    background: url(../images/watericon.png) repeat top left #f2f2f2;	}
+.roytc_content .natureicon{
+    background: url(../images/natureicon.png) repeat top left #f2f2f2;	}
+.roytc_content .lilacicon{
+    background: url(../images/lilacicon.png) repeat top left #f2f2f2;	}
+.roytc_content .goldenicon{
+    background: url(../images/goldenicon.png) repeat top left #f2f2f2;
+    text-shadow: 0px 0px 8px #6d3805!important; }
+.roytc_content .sunnyicon{
+    background: url(../images/sunnyicon.png) repeat top left #f2f2f2; }
+.roytc_content .easyicon{
+    background: url(../images/easyicon.png) repeat top left #f2f2f2;
+    text-shadow: 0px 0px 8px #036d63!important; }
+.roytc_content .foresticon{
+    background: url(../images/foresticon.png) repeat top left #f2f2f2;	}
+.roytc_content .azureicon{
+    background: url(../images/azureicon.png) repeat top left #f2f2f2;	}
+.roytc_content .retroicon{
+    background: url(../images/retroicon.png) repeat top left #f2f2f2;	}
+.roytc_content .nighticon{
+    background: url(../images/nighticon.png) repeat top left #f2f2f2;	}
+.roytc_content .monoicon{
+    background: url(../images/monoicon.png) repeat top left #f2f2f2;	}
+
+
+
+.roytc_content .pat1{
+    background: url(../images/textures/pat1.png) repeat top left; }
+.roytc_content .pat2{
+    background: url(../images/textures/pat2.png) repeat top left; }
+.roytc_content .pat3{
+    background: url(../images/textures/pat3.png) repeat top left; }
+.roytc_content .pat4{
+    background: url(../images/textures/pat4.png) repeat top left; }
+.roytc_content .pat5{
+    background: url(../images/textures/pat5.png) repeat top left; }
+.roytc_content .pat6{
+    background: url(../images/textures/pat6.png) repeat top left; }
+.roytc_content .pat7{
+    background: url(../images/textures/pat7.png) repeat top left; }
+.roytc_content .pat8{
+    background: url(../images/textures/pat8.png) repeat top left; }
+.roytc_content .pat9{
+    background: url(../images/textures/pat9.png) repeat top left; }
+.roytc_content .pat10{
+    background: url(../images/textures/pat10.png) repeat top left; }
+.roytc_content .pat11{
+    background: url(../images/textures/pat11.png) repeat top left; }
+.roytc_content .pat12{
+    background: url(../images/textures/pat12.png) repeat top left; }
+.roytc_content .pat13{
+    background: url(../images/textures/pat13.png) repeat top left; }
+.roytc_content .pat14{
+    background: url(../images/textures/pat14.png) repeat top left; }
+.roytc_content .pat15{
+    background: url(../images/textures/pat15.png) repeat top left; }
+.roytc_content .pat16{
+    background: url(../images/textures/pat16.png) repeat top left; }
+.roytc_content .pat17{
+    background: url(../images/textures/pat17.png) repeat top left; }
+.roytc_content .pat18{
+    background: url(../images/textures/pat18.png) repeat top left; }
+.roytc_content .pat19{
+    background: url(../images/textures/pat19.png) repeat top left; }
+.roytc_content .pat20{
+    background: url(../images/textures/pat20.png) repeat top left; }
+.roytc_content .pat21{
+    background: url(../images/textures/pat21.png) repeat top left; }
+.roytc_content .pat22{
+    background: url(../images/textures/pat22.png) repeat top left; }
+.roytc_content .pat23{
+    background: url(../images/textures/pat23.png) repeat top left; }
+.roytc_content .pat24{
+    background: url(../images/textures/pat24.png) repeat top left; }
+.roytc_content .pat25{
+    background: url(../images/textures/pat25.png) repeat top left; }
+.roytc_content .pat26{
+    background: url(../images/textures/pat26.png) repeat top left; }
+.roytc_content .pat27{
+    background: url(../images/textures/pat27.png) repeat top left; }
+.roytc_content .pat28{
+    background: url(../images/textures/pat28.png) repeat top left; }
+.roytc_content .pat29{
+    background: url(../images/textures/pat29.png) repeat top left; }
+.roytc_content .pat30{
+    background: url(../images/textures/pat30.png) repeat top left; }
+.roytc_content .pat31{
+    background: url(../images/textures/pat31.png) repeat top left; }
+.roytc_content .pat32{
+    background: url(../images/textures/pat32.png) repeat top left; }
+.roytc_content .pat33{
+    background: url(../images/textures/pat33.png) repeat top left; }
+.roytc_content .pat34{
+    background: url(../images/textures/pat34.png) repeat top left; }
+.roytc_content .pat35{
+    background: url(../images/textures/pat35.png) repeat top left; }
+.roytc_content .pat36{
+    background: url(../images/textures/pat36.png) repeat top left; }
+.roytc_content .pat37{
+    background: url(../images/textures/pat37.png) repeat top left; }
+.roytc_content .pat38{
+    background: url(../images/textures/pat38.png) repeat top left; }
+.roytc_content .pat39{
+    background: url(../images/textures/pat39.png) repeat top left; }
+.roytc_content .pat40{
+    background: url(../images/textures/pat40.png) repeat top left; }
+.roytc_content .pat41{
+    background: url(../images/textures/pat41.png) repeat top left; }
+.roytc_content .pat42{
+    background: url(../images/textures/pat42.png) repeat top left; }
+.roytc_content .pat43{
+    background: url(../images/textures/pat43.png) repeat top left; }
+.roytc_content .pat44{
+    background: url(../images/textures/pat44.png) repeat top left; }
+.roytc_content .pat45{
+    background: url(../images/textures/pat45.png) repeat top left; }
+.roytc_content .pat46{
+    background: url(../images/textures/pat46.png) repeat top left; }
+.roytc_content .pat47{
+    background: url(../images/textures/pat47.png) repeat top left; }
+.roytc_content .pat48{
+    background: url(../images/textures/pat48.png) repeat top left; }
+.roytc_content .pat49{
+    background: url(../images/textures/pat49.png) repeat top left; }
+.roytc_content .pat50{
+    background: url(../images/textures/pat50.png) repeat top left; }
+.roytc_content .pat51{
+    background: url(../images/textures/pat51.png) repeat top left; }
+.roytc_content .pat52{
+    background: url(../images/textures/pat52.png) repeat top left; }
+.roytc_content .pat53{
+    background: url(../images/textures/pat53.png) repeat top left; }
+.roytc_content .pat54{
+    background: url(../images/textures/pat54.png) repeat top left; }
+.roytc_content .pat55{
+    background: url(../images/textures/pat55.png) repeat top left; }
+.roytc_content .pat56{
+    background: url(../images/textures/pat56.png) repeat top left; }
+.roytc_content .pat57{
+    background: url(../images/textures/pat57.png) repeat top left; }
+.roytc_content .pat58{
+    background: url(../images/textures/pat58.png) repeat top left; }
+.roytc_content .pat59{
+    background: url(../images/textures/pat59.png) repeat top left; }
+.roytc_content .pat60{
+    background: url(../images/textures/pat60.png) repeat top left; }
+.roytc_content .pat61{
+    background: url(../images/textures/pat61.png) repeat top left; }
+.roytc_content .pat62{
+    background: url(../images/textures/pat62.png) repeat top left; }
+.roytc_content .pat63{
+    background: url(../images/textures/pat63.png) repeat top left; }
+.roytc_content .pat64{
+    background: url(../images/textures/pat64.png) repeat top left; }
+.roytc_content .pat65{
+    background: url(../images/textures/pat65.png) repeat top left; }
+.roytc_content .pat66{
+    background: url(../images/textures/pat66.png) repeat top left; }
+.roytc_content .pat67{
+    background: url(../images/textures/pat67.png) repeat top left; }
+.roytc_content .pat68{
+    background: url(../images/textures/pat68.png) repeat top left; }
+.roytc_content .pat69{
+    background: url(../images/textures/pat69.png) repeat top left; }
+.roytc_content .pat70{
+    background: url(../images/textures/pat70.png) repeat top left; }
+.roytc_content .pat71{
+    background: url(../images/textures/pat71.png) repeat top left; }
+.roytc_content .pat72{
+    background: url(../images/textures/pat72.png) repeat top left; }
+.roytc_content .pat73{
+    background: url(../images/textures/pat73.png) repeat top left; }
+.roytc_content .pat74{
+    background: url(../images/textures/pat74.png) repeat top left; }
+.roytc_content .pat75{
+    background: url(../images/textures/pat75.png) repeat top left; }
+.roytc_content .pat76{
+    background: url(../images/textures/pat76.png) repeat top left; }
+.roytc_content .pat77{
+    background: url(../images/textures/pat77.png) repeat top left; }
+.roytc_content .pat78{
+    background: url(../images/textures/pat78.png) repeat top left; }
+.roytc_content .pat79{
+    background: url(../images/textures/pat79.png) repeat top left; }
+
+.imgback{max-width: 600px;}
+
+#headingexample{font-size: 18px;}
+
+.roytc_row .mColorPickerTrigger {
+    display:inline-block;
+    margin-top:-10px;
+    padding:6px;
+    background-color:#ffffff;
+    border:1px solid #d8d8d8;
+    font-size: 14px;
+    line-height: 14px;
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Google Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    -o-border-radius: 5px; /* Opera */
+    -ms-border-radius: 5px; /* IE8 */
+    -icab-border-radius: 5px; /* Icab */
+    border-radius: 5px; /* CSS3 */
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.roytc_row .mColorPickerTrigger img {
+    vertical-align: top!important;
+    padding:0!important;
+    margin:0!important;
+}
+
+.roytc_row .mColorPickerTrigger:hover {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+
+
+/* RADIO */
+
+
+.regular-radio {
+    display:none;
+}
+
+
+.regular-radio + label.t {
+    -webkit-appearance:none;
+    background-color:#ffffff;
+    border:4px solid #bdc3c7;
+    box-shadow:0 1px 2px rgba(0,0,0,0.05),inset 0 -15px 10px -12px rgba(0,0,0,0.05);
+    padding:0px!important;
+    width:16px!important;
+    height:16px!important;
+    border-radius:50px;
+    display:inline-block;
+    position:relative;
+    cursor: pointer;
+    margin-top:-10px;
+    text-indent: 26px;
+    margin-right: 44px;
+    font-weight: bold;
+}
+
+.regular-radio:checked + label.t:after {
+    content:' ';
+    width:10px;
+    height:10px;
+    border-radius:50px;
+    position:absolute;
+    top:3px;
+    background:#1abc9c;
+    text-shadow:0;
+    left:3px;
+    font-size:32px;
+}
+
+
+.regular-radio:checked + label.t {
+    background-color:#ffffff;
+    border:4px solid #1abc9c;
+    box-shadow:0 1px 2px rgba(0,0,0,0.05),inset 0 -15px 10px -12px rgba(0,0,0,0.05),inset 15px 10px -12px rgba(255,255,255,0.1),inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.regular-radio + label.t:active,
+.regular-radio:checked + label.t:active {
+    box-shadow:0 1px 2px rgba(0,0,0,0.05),inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+.hot_label {
+    text-transform: uppercase;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:bold;
+    padding:4px 8px;
+    text-shadow:none!important;
+    background:#fe8a71;
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Google Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    -o-border-radius: 5px; /* Opera */
+    -ms-border-radius: 5px; /* IE8 */
+    -icab-border-radius: 5px; /* Icab */
+    border-radius: 5px;
+}
+.new_label {
+    text-transform: uppercase;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:bold;
+    padding:4px 8px;
+    background:#45b7af;
+    text-shadow:none!important;
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Google Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    -o-border-radius: 5px; /* Opera */
+    -ms-border-radius: 5px; /* IE8 */
+    -icab-border-radius: 5px; /* Icab */
+    border-radius: 5px;
+}
+.roytc_form .roytc_filedset .roytc_navigation ul li .hot_label {
+    position:absolute;
+    top:50%;
+    margin-top:-13px;
+    right:18px;
+}
+.roytc_form .roytc_filedset .roytc_navigation ul li .new_label {
+    position:absolute;
+    top:50%;
+    margin-top:-13px;
+    right:18px;
+}
+
+.roytc_row label .hot_label {
+    margin:0 0 0 8px;
+}
+.roytc_row label .new_label {
+    margin:0 0 0 8px;
+}
+
+.CodeMirror {
+    max-width:955px;
+    border:1px solid #e5e5e5;
+}
+
+/* Import Export custom */
+
+.roytc_form .roytc_filedset .roytc_content #tab-ie .roytc_row {
+    margin:20px 30px;
+}
+
+.roytc_form .roytc_filedset .roytc_content #tab-ie .margin-form-ie {
+    padding:80px 30px;
+    text-align: center;
+    width:560px;
+    background:#ffffff;
+    border:1px solid #e5e5e5;
+    float:left;
+    margin-bottom:30px;
+}
+
+.roytc_form .roytc_filedset .roytc_content #tab-ie label {
+    float:none;
+}
+
+.roytc_form .roytc_filedset .roytc_content #tab-ie p.helpcontent {
+    margin:10px 0;
+}

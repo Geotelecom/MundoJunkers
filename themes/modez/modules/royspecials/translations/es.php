@@ -1,0 +1,31 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{royspecials}modez>royspecials_266e006e9ac3ec44ae8f29d15064b5b7'] = 'Roy bloque Especiales';
+$_MODULE['<{royspecials}modez>royspecials_621c6ba626a0ca78ae2540ab506956f5'] = 'Agrega un bloque de sus descuentos en los precios con cuenta atrás';
+$_MODULE['<{royspecials}modez>royspecials_b15e7271053fe9dd22d80db100179085'] = 'Esta necesidad módulo que se enganchó en una columna y su tema no implementa una';
+$_MODULE['<{royspecials}modez>royspecials_c888438d14855d7d96a2724ee9c306bd'] = 'ajustes actualizan';
+$_MODULE['<{royspecials}modez>royspecials_f4f70727dc34561dfde1a3c529b6205c'] = 'ajustes';
+$_MODULE['<{royspecials}modez>royspecials_24ff4e4d39bb7811f6bdf0c189462272'] = 'Siempre mostrar este bloque';
+$_MODULE['<{royspecials}modez>royspecials_53d61d1ac0507b1bd8cd99db8d64fb19'] = 'Mostrar el bloque incluso si hay productos están disponibles.';
+$_MODULE['<{royspecials}modez>royspecials_00d23a76e43b46dae9ec7aa9dcbebb32'] = 'habilitado';
+$_MODULE['<{royspecials}modez>royspecials_b9f5c797ebbf55adccdd8539a65a0241'] = 'deshabilitado';
+$_MODULE['<{royspecials}modez>royspecials_61465481ac2491b37e4517960bbd4a14'] = 'Número de archivos almacenados en caché';
+$_MODULE['<{royspecials}modez>royspecials_e80a11f1704b88ad50f8fc6ce0f43525'] = 'Promociones especiales se muestran de forma aleatoria en el front-end, pero ya que se necesita una gran cantidad de Recursos, que es mejor para almacenar en caché los resultados. La memoria caché se repone diariamente. 0 deshabilitará la caché.';
+$_MODULE['<{royspecials}modez>royspecials_26986c3388870d4148b1b5375368a83d'] = 'Productos para mostrar';
+$_MODULE['<{royspecials}modez>royspecials_63c150b9c1204c4825ce5914aed20717'] = 'Definir el número de productos que se mostrará en este bloque en la página principal.';
+$_MODULE['<{royspecials}modez>royspecials_c9cc8cce247e49bae79f15173ce97354'] = 'Salvar';
+$_MODULE['<{royspecials}modez>royspecials-home_8998e8cfe491ed168b36a94c0fc75f88'] = 'descuentos en los precios';
+$_MODULE['<{royspecials}modez>royspecials-home_e420850bc0f6c94eff7edb2041b206bd'] = 'No hay productos especiales en este momento.';
+$_MODULE['<{royspecials}modez>royspecials_d1aa22a3126f04664e0fe3f598994014'] = 'Promociones especiales';
+$_MODULE['<{royspecials}modez>royspecials_e807d3ccf8d24c8c1a3d86db5da78da8'] = 'Días';
+$_MODULE['<{royspecials}modez>royspecials_6a7e73161603d87b26a8eac49dab0a9c'] = 'horas';
+$_MODULE['<{royspecials}modez>royspecials_f670ea66cfb0e90bd6090472ad692694'] = 'Minutos';
+$_MODULE['<{royspecials}modez>royspecials_8f19a8c7566af54ea8981029730e5465'] = 'Segundos';
+$_MODULE['<{royspecials}modez>royspecials_631ea995d4d454791294a5490743a7ef'] = 'Limitada oferta especial';
+$_MODULE['<{royspecials}modez>royspecials_e2e79605fc9450ec17957cf0e910f5c6'] = 'con IVA';
+$_MODULE['<{royspecials}modez>royspecials_887ee91702c962a70b87cbef07bbcaec'] = 'sin IVA';
+$_MODULE['<{royspecials}modez>royspecials_b4f95c1ea534936cc60c6368c225f480'] = 'todas los promociones especiales';
+$_MODULE['<{royspecials}modez>royspecials_3c9f5a6dc6585f75042bd4242c020081'] = 'No hay promociones especiales en este momento.';
+$_MODULE['<{royspecials}modez>tab_d1aa22a3126f04664e0fe3f598994014'] = 'Promociones especiales';

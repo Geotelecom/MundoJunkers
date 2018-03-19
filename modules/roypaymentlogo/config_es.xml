@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>roypaymentlogo</name>
+	<displayName><![CDATA[logotipos de pago Pie de bloque.]]></displayName>
+	<version><![CDATA[1.0]]></version>
+	<description><![CDATA[Agrega un bloque que muestra todas sus logotipos de pago en el pie de p&aacute;gina.]]></description>
+	<author><![CDATA[RoyThemes (PrestaShop module remake)]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

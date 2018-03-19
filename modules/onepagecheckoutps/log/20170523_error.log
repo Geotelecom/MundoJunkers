@@ -1,0 +1,1502 @@
+[500] Internal Server Error
+<style>
+				#psException{font-family: Verdana; font-size: 14px}
+				#psException h2{color: #F20000}
+				#psException p{padding-left: 20px}
+				#psException ul li{margin-bottom: 10px}
+				#psException a{font-size: 12px; color: #000000}
+				#psException .psTrace, #psException .psArgs{display: none}
+				#psException pre{border:1px solid #236B04; background-color:#EAFEE1; padding:5px; font-family:Courier;
+				width: 99%; overflow-x: auto; margin-bottom: 30px;}
+				#psException .psArgs pre{background-color: #F1FDFE;}
+				#psException pre .selected{color: #F20000; font-weight: bold;}
+			</style><div id="psException"><h2>[PrestaShopException]</h2><p><b>Property Address->lastname is empty</b><br /><i>at line </i><b>837</b><i> in file </i><b>classes/ObjectModel.php</b></p><div class="psTrace" id="psTrace_" style="display: block"><pre>831. 
+832. 			$message = $this-&gt;validateField($field, $this-&gt;$field);
+833. 			if ($message !== true)
+834. 			{
+835. 				if ($die)
+<span class="selected">836. 					throw new PrestaShopException($message);
+</span>837. 				return $error_return ? $message : false;
+838. 			}
+839. 		}
+840. 
+841. 		return true;
+</pre></div><ul><li><b>ObjectModelCore->validateFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_0').style.display =
+					(document.getElementById('psTrace_0').style.display != 'block') ? 'block' : 'none';
+					return false">[line 255 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_0" ><pre>249. 	 *
+250. 	 * @return array All object fields
+251. 	 */
+252. 	public function getFields()
+253. 	{
+<span class="selected">254. 		$this-&gt;validateFields();
+</span>255. 		$fields = $this-&gt;formatFields(self::FORMAT_COMMON);
+256. 
+257. 		// For retro compatibility
+258. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+259. 			$fields = array_merge($fields, $this-&gt;getFieldsShop());
+</pre></div></li><li><b>ObjectModelCore->getFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_1').style.display =
+					(document.getElementById('psTrace_1').style.display != 'block') ? 'block' : 'none';
+					return false">[line 596 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_1" ><pre>590. 			$id_shop_list = $this-&gt;id_shop_list;
+591. 
+592. 		if (Shop::checkIdShopDefault($this-&gt;def['table']) &amp;&amp; !$this-&gt;id_shop_default)
+593. 			$this-&gt;id_shop_default = min($id_shop_list);
+594. 		// Database update
+<span class="selected">595. 		if (!$result = ObjectModel::$db-&gt;update($this-&gt;def['table'], $this-&gt;getFields(), '`'.pSQL($this-&gt;def['primary']).'` = '.(int)$this-&gt;id, 0, $null_values))
+</span>596. 			return false;
+597. 
+598. 		// Database insertion for multishop fields related to the object
+599. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+600. 		{
+</pre></div></li><li><b>ObjectModelCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_2').style.display =
+					(document.getElementById('psTrace_2').style.display != 'block') ? 'block' : 'none';
+					return false">[line 186 - classes/Address.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_2').style.display =
+						(document.getElementById('psArgs_2').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_2" ><pre>180. 		if (isset(self::$_idCountries[$this-&gt;id]))
+181. 			unset(self::$_idCountries[$this-&gt;id]);
+182. 		if (isset(self::$_idZones[$this-&gt;id]))
+183. 			unset(self::$_idZones[$this-&gt;id]);
+184. 
+<span class="selected">185. 		return parent::update($null_values);
+</span>186. 	}
+187. 
+188. 	/**
+189. 	 * @see ObjectModel::delete()
+190. 	 */
+</pre></div><div class="psArgs" id="psArgs_2"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>AddressCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_3').style.display =
+					(document.getElementById('psTrace_3').style.display != 'block') ? 'block' : 'none';
+					return false">[line 417 - classes/ObjectModel.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_3').style.display =
+						(document.getElementById('psArgs_3').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_3" ><pre>411. 	 * @param bool $autodate
+412. 	 * @return boolean Insertion result
+413. 	 */
+414. 	public function save($null_values = false, $autodate = true)
+415. 	{
+<span class="selected">416. 		return (int)$this-&gt;id &gt; 0 ? $this-&gt;update($null_values) : $this-&gt;add($autodate, $null_values);
+</span>417. 	}
+418. 
+419. 	/**
+420. 	 * Add current object to database
+421. 	 *
+</pre></div><div class="psArgs" id="psArgs_3"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>ObjectModelCore->save</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_4').style.display =
+					(document.getElementById('psTrace_4').style.display != 'block') ? 'block' : 'none';
+					return false">[line 4616 - modules/onepagecheckoutps/onepagecheckoutps.php]</a><div class="psTrace" id="psTrace_4" ><pre>4610.                                 $delivery_address-&gt;id = null;
+4611.                                 $delivery_address-&gt;alias .= ' 2';
+4612.                             }
+4613.                         }*/
+4614. 
+<span class="selected">4615.                         if (!$delivery_address-&gt;save()) {
+</span>4616.                             $this-&gt;errors[] = $this-&gt;l('An error occurred while updating your delivery address.');
+4617.                         }
+4618. 
+4619.                         if (Validate::isLoadedObject($delivery_address)) {
+4620.                             //assign opc customer to cookie, customer and cart to calculare fine the prices of carriers
+</pre></div></li><li><b>OnePageCheckoutPS->loadCarrier</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_5').style.display =
+					(document.getElementById('psTrace_5').style.display != 'block') ? 'block' : 'none';
+					return false">[line 706 - override/controllers/front/OrderOpcController.php]</a><div class="psTrace" id="psTrace_5" ><pre>700.                         die('Invalid data type.');
+701.                 }
+702.             } elseif (method_exists($this-&gt;onepagecheckoutps, $action)) {
+703.                 switch ($data_type) {
+704.                     case 'html':
+<span class="selected">705.                         die($this-&gt;onepagecheckoutps-&gt;$action());
+</span>706.                     case 'json':
+707.                         $response = $this-&gt;onepagecheckoutps-&gt;jsonEncode($this-&gt;onepagecheckoutps-&gt;$action());
+708.                         die($response);
+709.                     default:
+710.                         die('Invalid data type.');
+</pre></div></li><li><b>OrderOpcController->postProcess</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_6').style.display =
+					(document.getElementById('psTrace_6').style.display != 'block') ? 'block' : 'none';
+					return false">[line 171 - classes/controller/Controller.php]</a><div class="psTrace" id="psTrace_6" ><pre>165. 			// setMedia MUST be called before postProcess
+166. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+167. 				$this-&gt;setMedia();
+168. 
+169. 			// postProcess handles ajaxProcess
+<span class="selected">170. 			$this-&gt;postProcess();
+</span>171. 
+172. 			if (!empty($this-&gt;redirect_after))
+173. 				$this-&gt;redirect();
+174. 
+175. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+</pre></div></li><li><b>ControllerCore->run</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_7').style.display =
+					(document.getElementById('psTrace_7').style.display != 'block') ? 'block' : 'none';
+					return false">[line 373 - classes/Dispatcher.php]</a><div class="psTrace" id="psTrace_7" ><pre>367. 			// Execute hook dispatcher
+368. 			if (isset($params_hook_action_dispatcher))
+369. 				Hook::exec('actionDispatcher', $params_hook_action_dispatcher);
+370. 
+371. 			// Running controller
+<span class="selected">372. 			$controller-&gt;run();
+</span>373. 		}
+374. 		catch (PrestaShopException $e)
+375. 		{
+376. 			$e-&gt;displayMessage();
+377. 		}
+</pre></div></li><li><b>DispatcherCore->dispatch</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_8').style.display =
+					(document.getElementById('psTrace_8').style.display != 'block') ? 'block' : 'none';
+					return false">[line 30 - index.php]</a><div class="psTrace" id="psTrace_8" ><pre>24. */
+25. 
+26. require_once('redirect_301.php');
+27. 
+28. require(dirname(__FILE__).'/config/config.inc.php');
+<span class="selected">29. Dispatcher::getInstance()-&gt;dispatch();
+</span></pre></div></li></ul></div>
+
+{"url_call":"https://ahorraclima.es/pedido-rapido?rand=1495495791588","is_ajax":1,"action":"loadCarrier","dataType":"html","id_state":"313","postcode":"00000","city":"","id_address_delivery":"10133","async":1,"token":"ee282cb70e02b8cd707389f0a1a5e484","navigator":"Mozilla/5.0 (Linux; Android 4.4.2; miTab LIVE Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"}
+----------------------------------------------------------------
+
+[500] Internal Server Error
+<style>
+				#psException{font-family: Verdana; font-size: 14px}
+				#psException h2{color: #F20000}
+				#psException p{padding-left: 20px}
+				#psException ul li{margin-bottom: 10px}
+				#psException a{font-size: 12px; color: #000000}
+				#psException .psTrace, #psException .psArgs{display: none}
+				#psException pre{border:1px solid #236B04; background-color:#EAFEE1; padding:5px; font-family:Courier;
+				width: 99%; overflow-x: auto; margin-bottom: 30px;}
+				#psException .psArgs pre{background-color: #F1FDFE;}
+				#psException pre .selected{color: #F20000; font-weight: bold;}
+			</style><div id="psException"><h2>[PrestaShopException]</h2><p><b>Property Address->lastname is empty</b><br /><i>at line </i><b>837</b><i> in file </i><b>classes/ObjectModel.php</b></p><div class="psTrace" id="psTrace_" style="display: block"><pre>831. 
+832. 			$message = $this-&gt;validateField($field, $this-&gt;$field);
+833. 			if ($message !== true)
+834. 			{
+835. 				if ($die)
+<span class="selected">836. 					throw new PrestaShopException($message);
+</span>837. 				return $error_return ? $message : false;
+838. 			}
+839. 		}
+840. 
+841. 		return true;
+</pre></div><ul><li><b>ObjectModelCore->validateFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_0').style.display =
+					(document.getElementById('psTrace_0').style.display != 'block') ? 'block' : 'none';
+					return false">[line 255 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_0" ><pre>249. 	 *
+250. 	 * @return array All object fields
+251. 	 */
+252. 	public function getFields()
+253. 	{
+<span class="selected">254. 		$this-&gt;validateFields();
+</span>255. 		$fields = $this-&gt;formatFields(self::FORMAT_COMMON);
+256. 
+257. 		// For retro compatibility
+258. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+259. 			$fields = array_merge($fields, $this-&gt;getFieldsShop());
+</pre></div></li><li><b>ObjectModelCore->getFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_1').style.display =
+					(document.getElementById('psTrace_1').style.display != 'block') ? 'block' : 'none';
+					return false">[line 596 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_1" ><pre>590. 			$id_shop_list = $this-&gt;id_shop_list;
+591. 
+592. 		if (Shop::checkIdShopDefault($this-&gt;def['table']) &amp;&amp; !$this-&gt;id_shop_default)
+593. 			$this-&gt;id_shop_default = min($id_shop_list);
+594. 		// Database update
+<span class="selected">595. 		if (!$result = ObjectModel::$db-&gt;update($this-&gt;def['table'], $this-&gt;getFields(), '`'.pSQL($this-&gt;def['primary']).'` = '.(int)$this-&gt;id, 0, $null_values))
+</span>596. 			return false;
+597. 
+598. 		// Database insertion for multishop fields related to the object
+599. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+600. 		{
+</pre></div></li><li><b>ObjectModelCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_2').style.display =
+					(document.getElementById('psTrace_2').style.display != 'block') ? 'block' : 'none';
+					return false">[line 186 - classes/Address.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_2').style.display =
+						(document.getElementById('psArgs_2').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_2" ><pre>180. 		if (isset(self::$_idCountries[$this-&gt;id]))
+181. 			unset(self::$_idCountries[$this-&gt;id]);
+182. 		if (isset(self::$_idZones[$this-&gt;id]))
+183. 			unset(self::$_idZones[$this-&gt;id]);
+184. 
+<span class="selected">185. 		return parent::update($null_values);
+</span>186. 	}
+187. 
+188. 	/**
+189. 	 * @see ObjectModel::delete()
+190. 	 */
+</pre></div><div class="psArgs" id="psArgs_2"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>AddressCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_3').style.display =
+					(document.getElementById('psTrace_3').style.display != 'block') ? 'block' : 'none';
+					return false">[line 417 - classes/ObjectModel.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_3').style.display =
+						(document.getElementById('psArgs_3').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_3" ><pre>411. 	 * @param bool $autodate
+412. 	 * @return boolean Insertion result
+413. 	 */
+414. 	public function save($null_values = false, $autodate = true)
+415. 	{
+<span class="selected">416. 		return (int)$this-&gt;id &gt; 0 ? $this-&gt;update($null_values) : $this-&gt;add($autodate, $null_values);
+</span>417. 	}
+418. 
+419. 	/**
+420. 	 * Add current object to database
+421. 	 *
+</pre></div><div class="psArgs" id="psArgs_3"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>ObjectModelCore->save</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_4').style.display =
+					(document.getElementById('psTrace_4').style.display != 'block') ? 'block' : 'none';
+					return false">[line 4616 - modules/onepagecheckoutps/onepagecheckoutps.php]</a><div class="psTrace" id="psTrace_4" ><pre>4610.                                 $delivery_address-&gt;id = null;
+4611.                                 $delivery_address-&gt;alias .= ' 2';
+4612.                             }
+4613.                         }*/
+4614. 
+<span class="selected">4615.                         if (!$delivery_address-&gt;save()) {
+</span>4616.                             $this-&gt;errors[] = $this-&gt;l('An error occurred while updating your delivery address.');
+4617.                         }
+4618. 
+4619.                         if (Validate::isLoadedObject($delivery_address)) {
+4620.                             //assign opc customer to cookie, customer and cart to calculare fine the prices of carriers
+</pre></div></li><li><b>OnePageCheckoutPS->loadCarrier</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_5').style.display =
+					(document.getElementById('psTrace_5').style.display != 'block') ? 'block' : 'none';
+					return false">[line 706 - override/controllers/front/OrderOpcController.php]</a><div class="psTrace" id="psTrace_5" ><pre>700.                         die('Invalid data type.');
+701.                 }
+702.             } elseif (method_exists($this-&gt;onepagecheckoutps, $action)) {
+703.                 switch ($data_type) {
+704.                     case 'html':
+<span class="selected">705.                         die($this-&gt;onepagecheckoutps-&gt;$action());
+</span>706.                     case 'json':
+707.                         $response = $this-&gt;onepagecheckoutps-&gt;jsonEncode($this-&gt;onepagecheckoutps-&gt;$action());
+708.                         die($response);
+709.                     default:
+710.                         die('Invalid data type.');
+</pre></div></li><li><b>OrderOpcController->postProcess</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_6').style.display =
+					(document.getElementById('psTrace_6').style.display != 'block') ? 'block' : 'none';
+					return false">[line 171 - classes/controller/Controller.php]</a><div class="psTrace" id="psTrace_6" ><pre>165. 			// setMedia MUST be called before postProcess
+166. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+167. 				$this-&gt;setMedia();
+168. 
+169. 			// postProcess handles ajaxProcess
+<span class="selected">170. 			$this-&gt;postProcess();
+</span>171. 
+172. 			if (!empty($this-&gt;redirect_after))
+173. 				$this-&gt;redirect();
+174. 
+175. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+</pre></div></li><li><b>ControllerCore->run</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_7').style.display =
+					(document.getElementById('psTrace_7').style.display != 'block') ? 'block' : 'none';
+					return false">[line 373 - classes/Dispatcher.php]</a><div class="psTrace" id="psTrace_7" ><pre>367. 			// Execute hook dispatcher
+368. 			if (isset($params_hook_action_dispatcher))
+369. 				Hook::exec('actionDispatcher', $params_hook_action_dispatcher);
+370. 
+371. 			// Running controller
+<span class="selected">372. 			$controller-&gt;run();
+</span>373. 		}
+374. 		catch (PrestaShopException $e)
+375. 		{
+376. 			$e-&gt;displayMessage();
+377. 		}
+</pre></div></li><li><b>DispatcherCore->dispatch</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_8').style.display =
+					(document.getElementById('psTrace_8').style.display != 'block') ? 'block' : 'none';
+					return false">[line 30 - index.php]</a><div class="psTrace" id="psTrace_8" ><pre>24. */
+25. 
+26. require_once('redirect_301.php');
+27. 
+28. require(dirname(__FILE__).'/config/config.inc.php');
+<span class="selected">29. Dispatcher::getInstance()-&gt;dispatch();
+</span></pre></div></li></ul></div>
+
+{"url_call":"https://ahorraclima.es/pedido-rapido?rand=1495525545213","is_ajax":1,"action":"loadCarrier","dataType":"html","id_state":"313","postcode":"00000","city":"","id_address_delivery":"10182","async":1,"token":"a1114d347b9ce87c70560aedbae38913","navigator":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"}
+----------------------------------------------------------------
+
+[500] Internal Server Error
+<style>
+				#psException{font-family: Verdana; font-size: 14px}
+				#psException h2{color: #F20000}
+				#psException p{padding-left: 20px}
+				#psException ul li{margin-bottom: 10px}
+				#psException a{font-size: 12px; color: #000000}
+				#psException .psTrace, #psException .psArgs{display: none}
+				#psException pre{border:1px solid #236B04; background-color:#EAFEE1; padding:5px; font-family:Courier;
+				width: 99%; overflow-x: auto; margin-bottom: 30px;}
+				#psException .psArgs pre{background-color: #F1FDFE;}
+				#psException pre .selected{color: #F20000; font-weight: bold;}
+			</style><div id="psException"><h2>[PrestaShopException]</h2><p><b>Property Customer->passwd is empty</b><br /><i>at line </i><b>837</b><i> in file </i><b>classes/ObjectModel.php</b></p><div class="psTrace" id="psTrace_" style="display: block"><pre>831. 
+832. 			$message = $this-&gt;validateField($field, $this-&gt;$field);
+833. 			if ($message !== true)
+834. 			{
+835. 				if ($die)
+<span class="selected">836. 					throw new PrestaShopException($message);
+</span>837. 				return $error_return ? $message : false;
+838. 			}
+839. 		}
+840. 
+841. 		return true;
+</pre></div><ul><li><b>ObjectModelCore->validateFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_0').style.display =
+					(document.getElementById('psTrace_0').style.display != 'block') ? 'block' : 'none';
+					return false">[line 255 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_0" ><pre>249. 	 *
+250. 	 * @return array All object fields
+251. 	 */
+252. 	public function getFields()
+253. 	{
+<span class="selected">254. 		$this-&gt;validateFields();
+</span>255. 		$fields = $this-&gt;formatFields(self::FORMAT_COMMON);
+256. 
+257. 		// For retro compatibility
+258. 		if (Shop::isTableAssociated($this-&gt;def['table']))
+259. 			$fields = array_merge($fields, $this-&gt;getFieldsShop());
+</pre></div></li><li><b>ObjectModelCore->getFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_1').style.display =
+					(document.getElementById('psTrace_1').style.display != 'block') ? 'block' : 'none';
+					return false">[line 455 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_1" ><pre>449. 		// Database insertion
+450. 		if (isset($this-&gt;id) &amp;&amp; !Tools::getValue('forceIDs'))
+451. 			unset($this-&gt;id);
+452. 		if (Shop::checkIdShopDefault($this-&gt;def['table']))
+453. 			$this-&gt;id_shop_default = min($id_shop_list);
+<span class="selected">454. 		if (!$result = ObjectModel::$db-&gt;insert($this-&gt;def['table'], $this-&gt;getFields(), $null_values))
+</span>455. 			return false;
+456. 
+457. 		// Get object id in database
+458. 		$this-&gt;id = ObjectModel::$db-&gt;Insert_ID();
+459. 
+</pre></div></li><li><b>ObjectModelCore->add</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_2').style.display =
+					(document.getElementById('psTrace_2').style.display != 'block') ? 'block' : 'none';
+					return false">[line 225 - classes/Customer.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_2').style.display =
+						(document.getElementById('psArgs_2').style.display != 'block') ? 'block' : 'none';
+						return false">[2 Arguments]</a><div class="psTrace" id="psTrace_2" ><pre>219. 				$this-&gt;id_default_group = (int)Configuration::get('PS_CUSTOMER_GROUP');
+220. 
+221. 		/* Can't create a guest customer, if this feature is disabled */
+222. 		if ($this-&gt;is_guest &amp;&amp; !Configuration::get('PS_GUEST_CHECKOUT_ENABLED'))
+223. 			return false;
+<span class="selected">224. 	 	$success = parent::add($autodate, $null_values);
+</span>225. 		$this-&gt;updateGroup($this-&gt;groupBox);
+226. 		return $success;
+227. 	}
+228. 
+229. 	public function update($nullValues = false)
+</pre></div><div class="psArgs" id="psArgs_2"><pre><b>Argument [0]</b>
+1
+<b>Argument [1]</b>
+1
+</pre></li><li><b>CustomerCore->add</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_3').style.display =
+					(document.getElementById('psTrace_3').style.display != 'block') ? 'block' : 'none';
+					return false">[line 3153 - modules/onepagecheckoutps/onepagecheckoutps.php]</a><div class="psTrace" id="psTrace_3" ><pre>3147.             //New Guest customer
+3148.             if (Tools::getIsset('is_new_customer') &amp;&amp; Configuration::get('PS_GUEST_CHECKOUT_ENABLED')) {
+3149.                 $customer-&gt;is_guest = Tools::getValue('is_new_customer');
+3150.             }
+3151. 
+<span class="selected">3152.             if (!$customer-&gt;add()) {
+</span>3153.                 $this-&gt;errors[] = $this-&gt;l('An error occurred while creating your account.');
+3154.             } else {
+3155.                 $customer-&gt;cleanGroups();
+3156. 
+3157.                 if ($this-&gt;config_vars['OPC_CHOICE_GROUP_CUSTOMER'] &amp;&amp; Tools::getIsset('group_customer')) {
+</pre></div></li><li><b>OnePageCheckoutPS->createCustomer</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_4').style.display =
+					(document.getElementById('psTrace_4').style.display != 'block') ? 'block' : 'none';
+					return false">[line 3079 - modules/onepagecheckoutps/onepagecheckoutps.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_4').style.display =
+						(document.getElementById('psArgs_4').style.display != 'block') ? 'block' : 'none';
+						return false">[5 Arguments]</a><div class="psTrace" id="psTrace_4" ><pre>3073.         $password         = null;
+3074.         $is_set_invoice   = null;
+3075. 
+3076.         $this-&gt;validateFields($fields, $customer, $address_delivery, $address_invoice, $password, $is_set_invoice);
+3077.         if (!count($this-&gt;errors)) {
+<span class="selected">3078.             $this-&gt;createCustomer($customer, $address_delivery, $address_invoice, $password, $is_set_invoice);
+</span>3079.             if (!count($this-&gt;errors)) {
+3080.                 $results = array(
+3081.                     'isSaved'             =&gt; true,
+3082.                     'isGuest'             =&gt; $customer-&gt;is_guest,
+3083.                     'id_customer'         =&gt; (int) $customer-&gt;id,
+</pre></div><div class="psArgs" id="psArgs_4"><pre><b>Argument [0]</b>
+Customer Object
+(
+    [id] => 
+    [id_shop] => 1
+    [id_shop_group] => 1
+    [secure_key] => f63aaa32912967f22ffe84635bc44f41
+    [note] => 
+    [id_gender] => 0
+    [id_default_group] => 3
+    [id_lang] => 4
+    [lastname] => .
+    [firstname] => Nicolas Barba Yeste
+    [birthday] => 
+    [email] => nbarba@coac.net
+    [newsletter] => 
+    [ip_registration_newsletter] => 
+    [newsletter_date_add] => 
+    [optin] => 
+    [website] => 
+    [company] => 
+    [siret] => 
+    [ape] => 
+    [outstanding_allow_amount] => 0
+    [show_public_prices] => 0
+    [id_risk] => 
+    [max_payment_days] => 0
+    [passwd] => 
+    [last_passwd_gen] => 2017-05-23 03:51:18
+    [active] => 1
+    [is_guest] => 0
+    [deleted] => 0
+    [date_add] => 2017-05-23 09:51:18
+    [date_upd] => 2017-05-23 09:51:18
+    [years] => 
+    [days] => 
+    [months] => 
+    [geoloc_id_country] => 
+    [geoloc_id_state] => 
+    [geoloc_postcode] => 
+    [logged] => 0
+    [id_guest] => 
+    [groupBox] => 
+    [webserviceParameters:protected] => Array
+        (
+            [fields] => Array
+                (
+                    [id_default_group] => Array
+                        (
+                            [xlink_resource] => groups
+                        )
+
+                    [id_lang] => Array
+                        (
+                            [xlink_resource] => languages
+                        )
+
+                    [newsletter_date_add] => Array
+                        (
+                        )
+
+                    [ip_registration_newsletter] => Array
+                        (
+                        )
+
+                    [last_passwd_gen] => Array
+                        (
+                            [setter] => 
+                        )
+
+                    [secure_key] => Array
+                        (
+                            [setter] => 
+                        )
+
+                    [deleted] => Array
+                        (
+                        )
+
+                    [passwd] => Array
+                        (
+                            [setter] => setWsPasswd
+                        )
+
+                )
+
+            [associations] => Array
+                (
+                    [groups] => Array
+                        (
+                            [resource] => group
+                        )
+
+                )
+
+        )
+
+    [id_shop_list] => 
+    [get_shop_from_context:protected] => 1
+    [table:protected] => customer
+    [identifier:protected] => id_customer
+    [fieldsRequired:protected] => Array
+        (
+            [0] => lastname
+            [1] => firstname
+            [2] => email
+            [3] => passwd
+        )
+
+    [fieldsSize:protected] => Array
+        (
+            [lastname] => 32
+            [firstname] => 32
+            [email] => 128
+            [passwd] => 32
+            [note] => 65000
+        )
+
+    [fieldsValidate:protected] => Array
+        (
+            [secure_key] => isMd5
+            [lastname] => isName
+            [firstname] => isName
+            [email] => isEmail
+            [passwd] => isPasswd
+            [id_gender] => isUnsignedId
+            [birthday] => isBirthDate
+            [newsletter] => isBool
+            [optin] => isBool
+            [website] => isUrl
+            [company] => isGenericName
+            [siret] => isSiret
+            [ape] => isApe
+            [outstanding_allow_amount] => isFloat
+            [show_public_prices] => isBool
+            [id_risk] => isUnsignedInt
+            [max_payment_days] => isUnsignedInt
+            [active] => isBool
+            [deleted] => isBool
+            [note] => isCleanHtml
+            [is_guest] => isBool
+            [id_shop] => isUnsignedId
+            [id_shop_group] => isUnsignedId
+            [id_lang] => isUnsignedId
+            [date_add] => isDate
+            [date_upd] => isDate
+        )
+
+    [fieldsRequiredLang:protected] => Array
+        (
+        )
+
+    [fieldsSizeLang:protected] => Array
+        (
+        )
+
+    [fieldsValidateLang:protected] => Array
+        (
+        )
+
+    [tables:protected] => Array
+        (
+        )
+
+    [image_dir:protected] => 
+    [image_format:protected] => jpg
+    [def:protected] => Array
+        (
+            [table] => customer
+            [primary] => id_customer
+            [fields] => Array
+                (
+                    [secure_key] => Array
+                        (
+                            [type] => 3
+                            [validate] => isMd5
+                            [copy_post] => 
+                        )
+
+                    [lastname] => Array
+                        (
+                            [type] => 3
+                            [validate] => isName
+                            [required] => 1
+                            [size] => 32
+                        )
+
+                    [firstname] => Array
+                        (
+                            [type] => 3
+                            [validate] => isName
+                            [required] => 1
+                            [size] => 32
+                        )
+
+                    [email] => Array
+                        (
+                            [type] => 3
+                            [validate] => isEmail
+                            [required] => 1
+                            [size] => 128
+                        )
+
+                    [passwd] => Array
+                        (
+                            [type] => 3
+                            [validate] => isPasswd
+                            [required] => 1
+                            [size] => 32
+                        )
+
+                    [last_passwd_gen] => Array
+                        (
+                            [type] => 3
+                            [copy_post] => 
+                        )
+
+                    [id_gender] => Array
+                        (
+                            [type] => 1
+                            [validate] => isUnsignedId
+                        )
+
+                    [birthday] => Array
+                        (
+                            [type] => 5
+                            [validate] => isBirthDate
+                        )
+
+                    [newsletter] => Array
+                        (
+                            [type] => 2
+                            [validate] => isBool
+                        )
+
+                    [newsletter_date_add] => Array
+                        (
+                            [type] => 5
+                            [copy_post] => 
+                        )
+
+                    [ip_registration_newsletter] => Array
+                        (
+                            [type] => 3
+                            [copy_post] => 
+                        )
+
+                    [optin] => Array
+                        (
+                            [type] => 2
+                            [validate] => isBool
+                        )
+
+                    [website] => Array
+                        (
+                            [type] => 3
+                            [validate] => isUrl
+                        )
+
+                    [company] => Array
+                        (
+                            [type] => 3
+                            [validate] => isGenericName
+                        )
+
+                    [siret] => Array
+                        (
+                            [type] => 3
+                            [validate] => isSiret
+                        )
+
+                    [ape] => Array
+                        (
+                            [type] => 3
+                            [validate] => isApe
+                        )
+
+                    [outstanding_allow_amount] => Array
+                        (
+                            [type] => 4
+                            [validate] => isFloat
+                            [copy_post] => 
+                        )
+
+                    [show_public_prices] => Array
+                        (
+                            [type] => 2
+                            [validate] => isBool
+                            [copy_post] => 
+                        )
+
+                    [id_risk] => Array
+                        (
+                            [type] => 1
+                            [validate] => isUnsignedInt
+                            [copy_post] => 
+                        )
+
+                    [max_payment_days] => Array
+                        (
+                            [type] => 1
+                            [validate] => isUnsignedInt
+                            [copy_post] => 
+                        )
+
+                    [active] => Array
+                        (
+                            [type] => 2
+                            [validate] => isBool
+                            [copy_post] => 
+                        )
+
+                    [deleted] => Array
+                        (
+                            [type] => 2
+                            [validate] => isBool
+                            [copy_post] => 
+                        )
+
+                    [note] => Array
+                        (
+                            [type] => 6
+                            [validate] => isCleanHtml
+                            [size] => 65000
+                            [copy_post] => 
+                        )
+
+                    [is_guest] => Array
+                        (
+                            [type] => 2
+                            [validate] => isBool
+                            [copy_post] => 
+                        )
+
+                    [id_shop] => Array
+                        (
+                            [type] => 1
+                            [validate] => isUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [id_shop_group] => Array
+                        (
+                            [type] => 1
+                            [validate] => isUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [id_default_group] => Array
+                        (
+                            [type] => 1
+                            [copy_post] => 
+                        )
+
+                    [id_lang] => Array
+                        (
+                            [type] => 1
+                            [validate] => isUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [date_add] => Array
+                        (
+                            [type] => 5
+                            [validate] => isDate
+                            [copy_post] => 
+                        )
+
+                    [date_upd] => Array
+                        (
+                            [type] => 5
+                            [validate] => isDate
+                            [copy_post] => 
+                        )
+
+                )
+
+            [classname] => Customer
+        )
+
+    [update_fields:protected] => 
+)
+
+<b>Argument [1]</b>
+Address Object
+(
+    [id_customer] => 
+    [id_manufacturer] => 
+    [id_supplier] => 
+    [id_warehouse] => 
+    [id_country] => 6
+    [id_state] => 322
+    [country] => 
+    [alias] => 
+    [company] => 2003 SA
+    [lastname] => .
+    [firstname] => .
+    [address1] => Carretera Santa Creu de Calafell, 86
+    [address2] => 
+    [postcode] => 08830
+    [city] => Sant Boi de llobregat
+    [other] => 
+    [phone] => 670882850
+    [phone_mobile] => 
+    [vat_number] => 
+    [dni] => 52629851D
+    [date_add] => 2017-05-23 09:51:18
+    [date_upd] => 2017-05-23 09:51:18
+    [deleted] => 0
+    [_includeVars:protected] => Array
+        (
+            [addressType] => table
+        )
+
+    [_includeContainer:protected] => 
+    [webserviceParameters:protected] => Array
+        (
+            [objectsNodeName] => addresses
+            [fields] => Array
+                (
+                    [id_customer] => Array
+                        (
+                            [xlink_resource] => customers
+                        )
+
+                    [id_manufacturer] => Array
+                        (
+                            [xlink_resource] => manufacturers
+                        )
+
+                    [id_supplier] => Array
+                        (
+                            [xlink_resource] => suppliers
+                        )
+
+                    [id_warehouse] => Array
+                        (
+                            [xlink_resource] => warehouse
+                        )
+
+                    [id_country] => Array
+                        (
+                            [xlink_resource] => countries
+                        )
+
+                    [id_state] => Array
+                        (
+                            [xlink_resource] => states
+                        )
+
+                )
+
+        )
+
+    [id] => 
+    [id_lang:protected] => 
+    [id_shop:protected] => 
+    [id_shop_list] => 
+    [get_shop_from_context:protected] => 1
+    [table:protected] => address
+    [identifier:protected] => id_address
+    [fieldsRequired:protected] => Array
+        (
+            [0] => id_country
+            [1] => alias
+            [2] => lastname
+            [3] => firstname
+            [4] => address1
+            [5] => city
+        )
+
+    [fieldsSize:protected] => Array
+        (
+            [alias] => 32
+            [company] => 64
+            [lastname] => 32
+            [firstname] => 32
+            [address1] => 128
+            [address2] => 128
+            [postcode] => 12
+            [city] => 64
+            [other] => 300
+            [phone] => 32
+            [phone_mobile] => 32
+            [dni] => 16
+        )
+
+    [fieldsValidate:protected] => Array
+        (
+            [id_customer] => isNullOrUnsignedId
+            [id_manufacturer] => isNullOrUnsignedId
+            [id_supplier] => isNullOrUnsignedId
+            [id_warehouse] => isNullOrUnsignedId
+            [id_country] => isUnsignedId
+            [id_state] => isNullOrUnsignedId
+            [alias] => isGenericName
+            [company] => isGenericName
+            [lastname] => isName
+            [firstname] => isName
+            [vat_number] => isGenericName
+            [address1] => isAddress
+            [address2] => isAddress
+            [postcode] => isPostCode
+            [city] => isCityName
+            [other] => isMessage
+            [phone] => isPhoneNumber
+            [phone_mobile] => isPhoneNumber
+            [dni] => isDniLite
+            [deleted] => isBool
+            [date_add] => isDateFormat
+            [date_upd] => isDateFormat
+        )
+
+    [fieldsRequiredLang:protected] => Array
+        (
+        )
+
+    [fieldsSizeLang:protected] => Array
+        (
+        )
+
+    [fieldsValidateLang:protected] => Array
+        (
+        )
+
+    [tables:protected] => Array
+        (
+        )
+
+    [image_dir:protected] => 
+    [image_format:protected] => jpg
+    [def:protected] => Array
+        (
+            [table] => address
+            [primary] => id_address
+            [fields] => Array
+                (
+                    [id_customer] => Array
+                        (
+                            [type] => 1
+                            [validate] => isNullOrUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [id_manufacturer] => Array
+                        (
+                            [type] => 1
+                            [validate] => isNullOrUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [id_supplier] => Array
+                        (
+                            [type] => 1
+                            [validate] => isNullOrUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [id_warehouse] => Array
+                        (
+                            [type] => 1
+                            [validate] => isNullOrUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [id_country] => Array
+                        (
+                            [type] => 1
+                            [validate] => isUnsignedId
+                            [required] => 1
+                        )
+
+                    [id_state] => Array
+                        (
+                            [type] => 1
+                            [validate] => isNullOrUnsignedId
+                        )
+
+                    [alias] => Array
+                        (
+                            [type] => 3
+                            [validate] => isGenericName
+                            [required] => 1
+                            [size] => 32
+                        )
+
+                    [company] => Array
+                        (
+                            [type] => 3
+                            [validate] => isGenericName
+                            [size] => 64
+                        )
+
+                    [lastname] => Array
+                        (
+                            [type] => 3
+                            [validate] => isName
+                            [required] => 1
+                            [size] => 32
+                        )
+
+                    [firstname] => Array
+                        (
+                            [type] => 3
+                            [validate] => isName
+                            [required] => 1
+                            [size] => 32
+                        )
+
+                    [vat_number] => Array
+                        (
+                            [type] => 3
+                            [validate] => isGenericName
+                        )
+
+                    [address1] => Array
+                        (
+                            [type] => 3
+                            [validate] => isAddress
+                            [required] => 1
+                            [size] => 128
+                        )
+
+                    [address2] => Array
+                        (
+                            [type] => 3
+                            [validate] => isAddress
+                            [size] => 128
+                        )
+
+                    [postcode] => Array
+                        (
+                            [type] => 3
+                            [validate] => isPostCode
+                            [size] => 12
+                        )
+
+                    [city] => Array
+                        (
+                            [type] => 3
+                            [validate] => isCityName
+                            [required] => 1
+                            [size] => 64
+                        )
+
+                    [other] => Array
+                        (
+                            [type] => 3
+                            [validate] => isMessage
+                            [size] => 300
+                        )
+
+                    [phone] => Array
+                        (
+                            [type] => 3
+                            [validate] => isPhoneNumber
+                            [size] => 32
+                        )
+
+                    [phone_mobile] => Array
+                        (
+                            [type] => 3
+                            [validate] => isPhoneNumber
+                            [size] => 32
+                        )
+
+                    [dni] => Array
+                        (
+                            [type] => 3
+                            [validate] => isDniLite
+                            [size] => 16
+                        )
+
+                    [deleted] => Array
+                        (
+                            [type] => 2
+                            [validate] => isBool
+                            [copy_post] => 
+                        )
+
+                    [date_add] => Array
+                        (
+                            [type] => 5
+                            [validate] => isDateFormat
+                            [copy_post] => 
+                        )
+
+                    [date_upd] => Array
+                        (
+                            [type] => 5
+                            [validate] => isDateFormat
+                            [copy_post] => 
+                        )
+
+                )
+
+            [classname] => Address
+        )
+
+    [update_fields:protected] => 
+)
+
+<b>Argument [2]</b>
+Address Object
+(
+    [id_customer] => 
+    [id_manufacturer] => 
+    [id_supplier] => 
+    [id_warehouse] => 
+    [id_country] => 6
+    [id_state] => 322
+    [country] => 
+    [alias] => 
+    [company] => 
+    [lastname] => .
+    [firstname] => .
+    [address1] => C/ Enric Granados, 7-11, bajos 4ª
+    [address2] => 
+    [postcode] => 08924
+    [city] => Santa Coloma de Gramenet
+    [other] => 
+    [phone] => 
+    [phone_mobile] => 670882850
+    [vat_number] => 
+    [dni] => 52629851d
+    [date_add] => 2017-05-23 09:51:18
+    [date_upd] => 2017-05-23 09:51:18
+    [deleted] => 0
+    [_includeVars:protected] => Array
+        (
+            [addressType] => table
+        )
+
+    [_includeContainer:protected] => 
+    [webserviceParameters:protected] => Array
+        (
+            [objectsNodeName] => addresses
+            [fields] => Array
+                (
+                    [id_customer] => Array
+                        (
+                            [xlink_resource] => customers
+                        )
+
+                    [id_manufacturer] => Array
+                        (
+                            [xlink_resource] => manufacturers
+                        )
+
+                    [id_supplier] => Array
+                        (
+                            [xlink_resource] => suppliers
+                        )
+
+                    [id_warehouse] => Array
+                        (
+                            [xlink_resource] => warehouse
+                        )
+
+                    [id_country] => Array
+                        (
+                            [xlink_resource] => countries
+                        )
+
+                    [id_state] => Array
+                        (
+                            [xlink_resource] => states
+                        )
+
+                )
+
+        )
+
+    [id] => 
+    [id_lang:protected] => 
+    [id_shop:protected] => 
+    [id_shop_list] => 
+    [get_shop_from_context:protected] => 1
+    [table:protected] => address
+    [identifier:protected] => id_address
+    [fieldsRequired:protected] => Array
+        (
+            [0] => id_country
+            [1] => alias
+            [2] => lastname
+            [3] => firstname
+            [4] => address1
+            [5] => city
+        )
+
+    [fieldsSize:protected] => Array
+        (
+            [alias] => 32
+            [company] => 64
+            [lastname] => 32
+            [firstname] => 32
+            [address1] => 128
+            [address2] => 128
+            [postcode] => 12
+            [city] => 64
+            [other] => 300
+            [phone] => 32
+            [phone_mobile] => 32
+            [dni] => 16
+        )
+
+    [fieldsValidate:protected] => Array
+        (
+            [id_customer] => isNullOrUnsignedId
+            [id_manufacturer] => isNullOrUnsignedId
+            [id_supplier] => isNullOrUnsignedId
+            [id_warehouse] => isNullOrUnsignedId
+            [id_country] => isUnsignedId
+            [id_state] => isNullOrUnsignedId
+            [alias] => isGenericName
+            [company] => isGenericName
+            [lastname] => isName
+            [firstname] => isName
+            [vat_number] => isGenericName
+            [address1] => isAddress
+            [address2] => isAddress
+            [postcode] => isPostCode
+            [city] => isCityName
+            [other] => isMessage
+            [phone] => isPhoneNumber
+            [phone_mobile] => isPhoneNumber
+            [dni] => isDniLite
+            [deleted] => isBool
+            [date_add] => isDateFormat
+            [date_upd] => isDateFormat
+        )
+
+    [fieldsRequiredLang:protected] => Array
+        (
+        )
+
+    [fieldsSizeLang:protected] => Array
+        (
+        )
+
+    [fieldsValidateLang:protected] => Array
+        (
+        )
+
+    [tables:protected] => Array
+        (
+        )
+
+    [image_dir:protected] => 
+    [image_format:protected] => jpg
+    [def:protected] => Array
+        (
+            [table] => address
+            [primary] => id_address
+            [fields] => Array
+                (
+                    [id_customer] => Array
+                        (
+                            [type] => 1
+                            [validate] => isNullOrUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [id_manufacturer] => Array
+                        (
+                            [type] => 1
+                            [validate] => isNullOrUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [id_supplier] => Array
+                        (
+                            [type] => 1
+                            [validate] => isNullOrUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [id_warehouse] => Array
+                        (
+                            [type] => 1
+                            [validate] => isNullOrUnsignedId
+                            [copy_post] => 
+                        )
+
+                    [id_country] => Array
+                        (
+                            [type] => 1
+                            [validate] => isUnsignedId
+                            [required] => 1
+                        )
+
+                    [id_state] => Array
+                        (
+                            [type] => 1
+                            [validate] => isNullOrUnsignedId
+                        )
+
+                    [alias] => Array
+                        (
+                            [type] => 3
+                            [validate] => isGenericName
+                            [required] => 1
+                            [size] => 32
+                        )
+
+                    [company] => Array
+                        (
+                            [type] => 3
+                            [validate] => isGenericName
+                            [size] => 64
+                        )
+
+                    [lastname] => Array
+                        (
+                            [type] => 3
+                            [validate] => isName
+                            [required] => 1
+                            [size] => 32
+                        )
+
+                    [firstname] => Array
+                        (
+                            [type] => 3
+                            [validate] => isName
+                            [required] => 1
+                            [size] => 32
+                        )
+
+                    [vat_number] => Array
+                        (
+                            [type] => 3
+                            [validate] => isGenericName
+                        )
+
+                    [address1] => Array
+                        (
+                            [type] => 3
+                            [validate] => isAddress
+                            [required] => 1
+                            [size] => 128
+                        )
+
+                    [address2] => Array
+                        (
+                            [type] => 3
+                            [validate] => isAddress
+                            [size] => 128
+                        )
+
+                    [postcode] => Array
+                        (
+                            [type] => 3
+                            [validate] => isPostCode
+                            [size] => 12
+                        )
+
+                    [city] => Array
+                        (
+                            [type] => 3
+                            [validate] => isCityName
+                            [required] => 1
+                            [size] => 64
+                        )
+
+                    [other] => Array
+                        (
+                            [type] => 3
+                            [validate] => isMessage
+                            [size] => 300
+                        )
+
+                    [phone] => Array
+                        (
+                            [type] => 3
+                            [validate] => isPhoneNumber
+                            [size] => 32
+                        )
+
+                    [phone_mobile] => Array
+                        (
+                            [type] => 3
+                            [validate] => isPhoneNumber
+                            [size] => 32
+                        )
+
+                    [dni] => Array
+                        (
+                            [type] => 3
+                            [validate] => isDniLite
+                            [size] => 16
+                        )
+
+                    [deleted] => Array
+                        (
+                            [type] => 2
+                            [validate] => isBool
+                            [copy_post] => 
+                        )
+
+                    [date_add] => Array
+                        (
+                            [type] => 5
+                            [validate] => isDateFormat
+                            [copy_post] => 
+                        )
+
+                    [date_upd] => Array
+                        (
+                            [type] => 5
+                            [validate] => isDateFormat
+                            [copy_post] => 
+                        )
+
+                )
+
+            [classname] => Address
+        )
+
+    [update_fields:protected] => 
+)
+
+<b>Argument [3]</b>
+
+<b>Argument [4]</b>
+1
+</pre></li><li><b>OnePageCheckoutPS->createCustomerAjax</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_5').style.display =
+					(document.getElementById('psTrace_5').style.display != 'block') ? 'block' : 'none';
+					return false">[line 708 - override/controllers/front/OrderOpcController.php]</a><div class="psTrace" id="psTrace_5" ><pre>702.             } elseif (method_exists($this-&gt;onepagecheckoutps, $action)) {
+703.                 switch ($data_type) {
+704.                     case 'html':
+705.                         die($this-&gt;onepagecheckoutps-&gt;$action());
+706.                     case 'json':
+<span class="selected">707.                         $response = $this-&gt;onepagecheckoutps-&gt;jsonEncode($this-&gt;onepagecheckoutps-&gt;$action());
+</span>708.                         die($response);
+709.                     default:
+710.                         die('Invalid data type.');
+711.                 }
+712.             } else {
+</pre></div></li><li><b>OrderOpcController->postProcess</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_6').style.display =
+					(document.getElementById('psTrace_6').style.display != 'block') ? 'block' : 'none';
+					return false">[line 171 - classes/controller/Controller.php]</a><div class="psTrace" id="psTrace_6" ><pre>165. 			// setMedia MUST be called before postProcess
+166. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+167. 				$this-&gt;setMedia();
+168. 
+169. 			// postProcess handles ajaxProcess
+<span class="selected">170. 			$this-&gt;postProcess();
+</span>171. 
+172. 			if (!empty($this-&gt;redirect_after))
+173. 				$this-&gt;redirect();
+174. 
+175. 			if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className)))
+</pre></div></li><li><b>ControllerCore->run</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_7').style.display =
+					(document.getElementById('psTrace_7').style.display != 'block') ? 'block' : 'none';
+					return false">[line 373 - classes/Dispatcher.php]</a><div class="psTrace" id="psTrace_7" ><pre>367. 			// Execute hook dispatcher
+368. 			if (isset($params_hook_action_dispatcher))
+369. 				Hook::exec('actionDispatcher', $params_hook_action_dispatcher);
+370. 
+371. 			// Running controller
+<span class="selected">372. 			$controller-&gt;run();
+</span>373. 		}
+374. 		catch (PrestaShopException $e)
+375. 		{
+376. 			$e-&gt;displayMessage();
+377. 		}
+</pre></div></li><li><b>DispatcherCore->dispatch</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_8').style.display =
+					(document.getElementById('psTrace_8').style.display != 'block') ? 'block' : 'none';
+					return false">[line 30 - index.php]</a><div class="psTrace" id="psTrace_8" ><pre>24. */
+25. 
+26. require_once('redirect_301.php');
+27. 
+28. require(dirname(__FILE__).'/config/config.inc.php');
+<span class="selected">29. Dispatcher::getInstance()-&gt;dispatch();
+</span></pre></div></li></ul></div>
+
+{"url_call":"https://ahorraclima.es/pedido-rapido?rand=1495525752907","is_ajax":1,"dataType":"json","action":"createCustomerAjax","id_customer":"","id_address_delivery":"","id_address_invoice":null,"is_new_customer":0,"fields_opc":"[{"object":"customer","name":"id","value":""},{"object":"customer","name":"firstname","value":"Nicolas Barba Yeste"},{"object":"customer","name":"email","value":"nbarba@coac.net"},{"object":"customer","name":"passwd","value":"BB4626gx"},{"object":"delivery","name":"id","value":""},{"object":"delivery","name":"dni","value":"52629851D"},{"object":"delivery","name":"address1","value":"Carretera Santa Creu de Calafell, 86"},{"object":"delivery","name":"city","value":"Sant Boi de llobregat"},{"object":"delivery","name":"postcode","value":"08830"},{"object":"delivery","name":"id_state","value":"322"},{"object":"delivery","name":"phone","value":"670882850"},{"object":"delivery","name":"company","value":"2003 SA"},{"object":"invoice","name":"id","value":""},{"object":"invoice","name":"dni","value":"52629851d"},{"object":"invoice","name":"company","value":""},{"object":"invoice","name":"address1","value":"C/ Enric Granados, 7-11, bajos 4ª"},{"object":"invoice","name":"id_country","value":"6"},{"object":"invoice","name":"id_state","value":"322"},{"object":"invoice","name":"postcode","value":"08924"},{"object":"invoice","name":"city","value":"Santa Coloma de Gramenet"},{"object":"invoice","name":"phone","value":""},{"object":"invoice","name":"phone_mobile","value":"670882850"}]","quantity_1430_301_0_10164_hidden":"1","quantity_1430_301_0_10164":"1","discount_name":"","checkbox_create_account_guest":"on","checkbox_create_invoice_address":"on","delivery_option[10164]":"30,","method_payment":"redsys","async":1,"token":"72025f8ecacf42773743cc007f0ac66c","navigator":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"}
+----------------------------------------------------------------
+
