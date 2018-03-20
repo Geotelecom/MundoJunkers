@@ -77,6 +77,11 @@ p.carrito2{
   margin-bottom: 9px;
   margin-top: 18px;
 }
+p.ayuda{
+  color: #e4973b;
+  line-height: 2;
+  font-size: 23px;
+}
 
 .sds_title_block{
   display:block;
@@ -6600,7 +6605,11 @@ table.table_block td {
   .block .products-block .product-content {
     overflow: hidden; }
     .block .products-block .product-content h5 {
-      margin: -3px 0 0 0; }
+      margin: -3px 0 0 0; 
+    }
+    .block .products-block .product-content p.bloque {
+      margin: -3px 0 0 0; 
+    }
 .block .products-block a.btn, .block .blockstore a.btn {
   text-transform:uppercase;
   text-align:center;
