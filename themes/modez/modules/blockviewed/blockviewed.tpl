@@ -39,13 +39,13 @@
 						alt="{$viewedProduct->name|escape:'html':'UTF-8'}" />
 					</a>
 					<div class="product-content">
-						<h5>
+						<p class="bloque">
 							<a class="product-name" 
 							href="{$viewedProduct->product_link|escape:'html':'UTF-8'}" 
 							title="{l s='More about %s' mod='blockviewed' sprintf=[$viewedProduct->name|escape:'html':'UTF-8']}">
 								{$viewedProduct->name|truncate:25:'...'|escape:'html':'UTF-8'}
 							</a>
-						</h5>
+						</p>
 						<p class="product-description">{$viewedProduct->description_short|strip_tags:'UTF-8'|truncate:120}</p>
 					</div>
 				</li>

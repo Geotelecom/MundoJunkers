@@ -3,3 +3,9 @@
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: none; }
+
+
+p.bloque{
+	font-size: 13px;
+	line-height: 1.1;
+}
